@@ -1,0 +1,19 @@
+# Olimex GateMateA1-EVB (CCGM1A1) pin constraints.
+# Net names must match the top_gatemate port names.
+
+# 10 MHz on-board oscillator
+Pin_in  "main_clk"  Loc = "IO_SB_A8" | SCHMITT_TRIGGER=true;
+
+# The single user LED (active low: drive low to light it).
+Pin_out "led_user"  Loc = "IO_SB_B6";
+
+#UART:
+Pin_in "uart_rx" Loc = "IO_SA_A6";
+Pin_out "uart_tx" Loc = "IO_SA_B6";
+
+#JTAG
+Pin_in "tck_i" Loc = "IO_SB_A6"; #Clock 2 
+Pin_in "tms_i" Loc = "IO_SA_B8"; 
+Pin_in "td_i" Loc = "IO_SA_B4";
+Pin_out "td_o" Loc = "IO_SA_A4";
+

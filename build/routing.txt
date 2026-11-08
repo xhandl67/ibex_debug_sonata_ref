@@ -1,0 +1,1778 @@
+Info: Using uarch 'gatemate' for device 'CCGM1A1'
+Info: Using timing mode 'WORST'.
+Info: Using performance mode 'SPEED'.
+Info: constraining clock net 'main_clk' to 10.00 MHz
+Info: constraining clock net 'tck_i' to 0.10 MHz
+
+Info: Detected regions..
+Info:     top
+Info:     top led_user
+Info:     top main_clk
+Info:     top tck_i
+Info:     top td_i
+Info:     top td_o
+Info:     top tms_i
+Info:     top uart_rx
+Info:     top uart_tx
+Info: Parsing CCF file..
+Info: Assign cell region based on attributes..
+Info: Packing constants..
+Info: Running cleanups..
+Info: Packing IOs..
+Info:     Constraining '$iopadmap$top_gatemate.uart_tx' to pad 'IO_SA_B6'.
+Info:     Constraining '$iopadmap$top_gatemate.uart_rx' to pad 'IO_SA_A6'.
+Info:     Constraining '$iopadmap$top_gatemate.tms_i' to pad 'IO_SA_B8'.
+Info:     Constraining '$iopadmap$top_gatemate.td_o' to pad 'IO_SA_A4'.
+Info:     Constraining '$iopadmap$top_gatemate.td_i' to pad 'IO_SA_B4'.
+Info:     Constraining '$iopadmap$top_gatemate.tck_i' to pad 'IO_SB_A6'.
+Info:     Constraining '$iopadmap$top_gatemate.main_clk' to pad 'IO_SB_A8'.
+Info:     Constraining '$iopadmap$top_gatemate.led_user' to pad 'IO_SB_B6'.
+Info: Insert clocking cells..
+Info: Packing PLLs..
+Info: Sort BUFGs..
+Info: Packing BUFGs..
+Info: Packing IO SELs..
+Info: Packing misc..
+Info: Packing RAMs..
+Info: Packing SERDES..
+Info: Packing multipliers...
+Info:     Configuring '$2100' as a 20-bit * 20-bit = 34-bit multiplier.
+Info:         Created 161 CPEs.
+Info: Packing ADDFs..
+Info: Packing CPEs..
+Info: Removing unused constants..
+Info:     Removed unused VCC cell.
+Info:     Removed unused GND cell.
+Info: Fix cell assigned regions..
+Info: Checksum: 0x43330cc8
+
+Info: Device utilisation:
+Info: 	            USR_RSTN:       0/      1     0%
+Info: 	            CPE_COMP:      50/  20480     0%
+Info: 	         CPE_CPLINES:     109/  20480     0%
+Info: 	               IOSEL:       8/    162     4%
+Info: 	                GPIO:       8/    162     4%
+Info: 	               CLKIN:       1/      1   100%
+Info: 	              GLBOUT:       1/      1   100%
+Info: 	                 PLL:       0/      4     0%
+Info: 	            CFG_CTRL:       0/      1     0%
+Info: 	              SERDES:       0/      1     0%
+Info: 	              CPE_LT:   15693/  40960    38%
+Info: 	              CPE_FF:    4903/  40960    11%
+Info: 	           CPE_RAMIO:     457/  40960     1%
+Info: 	            RAM_HALF:       6/     64     9%
+
+Info: Placed 0 cells based on constraints.
+Info: Creating initial analytic placement for 11381 cells, random placement wirelen = 1578592.
+Info:     at initial placer iter 0, wirelen = 11995
+Info:     at initial placer iter 1, wirelen = 9861
+Info:     at initial placer iter 2, wirelen = 9385
+Info:     at initial placer iter 3, wirelen = 9756
+Info: Running main analytical placer, max placement attempts per cell = 57116672.
+Info:     at iteration #1, type ALL: wirelen solved = 9433, spread = 427166, legal = 641060; time = 2.83s
+Info:     at iteration #2, type ALL: wirelen solved = 21598, spread = 355705, legal = 503674; time = 1.55s
+Info:     at iteration #3, type ALL: wirelen solved = 41608, spread = 268020, legal = 416211; time = 1.49s
+Info:     at iteration #4, type ALL: wirelen solved = 55210, spread = 231626, legal = 337772; time = 1.25s
+Info:     at iteration #5, type ALL: wirelen solved = 65310, spread = 216308, legal = 356241; time = 1.64s
+Info:     at iteration #6, type ALL: wirelen solved = 75144, spread = 190017, legal = 273709; time = 0.82s
+Info:     at iteration #7, type ALL: wirelen solved = 79815, spread = 169986, legal = 254586; time = 0.88s
+Info:     at iteration #8, type ALL: wirelen solved = 82624, spread = 167948, legal = 240231; time = 0.78s
+Info:     at iteration #9, type ALL: wirelen solved = 85779, spread = 166425, legal = 215544; time = 0.46s
+Info:     at iteration #10, type ALL: wirelen solved = 90271, spread = 170465, legal = 215594; time = 0.45s
+Info:     at iteration #11, type ALL: wirelen solved = 94951, spread = 171686, legal = 205148; time = 0.35s
+Info:     at iteration #12, type ALL: wirelen solved = 101547, spread = 161466, legal = 183698; time = 0.27s
+Info:     at iteration #13, type ALL: wirelen solved = 104301, spread = 159932, legal = 185568; time = 0.31s
+Info:     at iteration #14, type ALL: wirelen solved = 108075, spread = 163485, legal = 186763; time = 0.30s
+Info:     at iteration #15, type ALL: wirelen solved = 112859, spread = 188658, legal = 208387; time = 0.27s
+Info:     at iteration #16, type ALL: wirelen solved = 125410, spread = 174018, legal = 184535; time = 0.23s
+Info:     at iteration #17, type ALL: wirelen solved = 122199, spread = 163566, legal = 180985; time = 0.25s
+Info:     at iteration #18, type ALL: wirelen solved = 120982, spread = 176694, legal = 203392; time = 0.30s
+Info:     at iteration #19, type ALL: wirelen solved = 128938, spread = 168908, legal = 192236; time = 0.31s
+Info:     at iteration #20, type ALL: wirelen solved = 129213, spread = 170676, legal = 192246; time = 0.28s
+Info:     at iteration #21, type ALL: wirelen solved = 132750, spread = 166293, legal = 186447; time = 0.25s
+Info:     at iteration #22, type ALL: wirelen solved = 130970, spread = 178530, legal = 209123; time = 0.33s
+Info: HeAP Placer Time: 17.66s
+Info:   of which solving equations: 4.07s
+Info:   of which spreading cells: 0.73s
+Info:   of which strict legalisation: 11.41s
+Info:      CPE_FF 1.277s
+Info:      CPE_LT_L 0.021s
+Info:      RAM_HALF 0.007s
+Info:      RAM 0.003s
+Info:      CPE_L2T4 10.016s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 2756, wirelen = 183646
+iter #1: temp = 0.000000, timing cost = 1477, wirelen = 162642, dia = 3, Ra = 0.15 
+iter #2: temp = 0.000000, timing cost = 1689, wirelen = 156480, dia = 3, Ra = 0.10 
+iter #3: temp = 0.000000, timing cost = 1529, wirelen = 152248, dia = 3, Ra = 0.08 
+iter #4: temp = 0.000000, timing cost = 1526, wirelen = 149593, dia = 3, Ra = 0.07 
+Info:   at iteration #5: temp = 0.000000, timing cost = 1839, wirelen = 149593
+iter #5: temp = 0.000000, timing cost = 1705, wirelen = 147597, dia = 3, Ra = 0.05 
+iter #6: temp = 0.000000, timing cost = 1568, wirelen = 146309, dia = 3, Ra = 0.05 
+iter #7: temp = 0.000000, timing cost = 1596, wirelen = 145208, dia = 3, Ra = 0.04 
+iter #8: temp = 0.000000, timing cost = 1534, wirelen = 144036, dia = 3, Ra = 0.04 
+iter #9: temp = 0.000000, timing cost = 1566, wirelen = 143510, dia = 3, Ra = 0.04 
+Info:   at iteration #10: temp = 0.000000, timing cost = 1590, wirelen = 143510
+iter #10: temp = 0.000000, timing cost = 1502, wirelen = 142829, dia = 3, Ra = 0.04 
+iter #11: temp = 0.000000, timing cost = 1589, wirelen = 142632, dia = 3, Ra = 0.04 
+iter #12: temp = 0.000000, timing cost = 1568, wirelen = 141731, dia = 2, Ra = 0.06 
+iter #13: temp = 0.000000, timing cost = 1495, wirelen = 140791, dia = 2, Ra = 0.05 
+iter #14: temp = 0.000000, timing cost = 1566, wirelen = 140480, dia = 2, Ra = 0.05 
+Info:   at iteration #15: temp = 0.000000, timing cost = 1552, wirelen = 140480
+iter #15: temp = 0.000000, timing cost = 1521, wirelen = 139835, dia = 1, Ra = 0.08 
+iter #16: temp = 0.000000, timing cost = 1498, wirelen = 139534, dia = 1, Ra = 0.07 
+iter #17: temp = 0.000000, timing cost = 1546, wirelen = 139384, dia = 1, Ra = 0.07 
+iter #18: temp = 0.000000, timing cost = 1527, wirelen = 139297, dia = 1, Ra = 0.07 
+iter #19: temp = 0.000000, timing cost = 1544, wirelen = 139144, dia = 1, Ra = 0.07 
+Info:   at iteration #20: temp = 0.000000, timing cost = 1538, wirelen = 139144
+iter #20: temp = 0.000000, timing cost = 1525, wirelen = 139071, dia = 1, Ra = 0.06 
+iter #21: temp = 0.000000, timing cost = 1540, wirelen = 139019, dia = 1, Ra = 0.06 
+iter #22: temp = 0.000000, timing cost = 1485, wirelen = 138868, dia = 1, Ra = 0.06 
+Info:   at iteration #23: temp = 0.000000, timing cost = 1520, wirelen = 138901 
+Info: SA placement time 36.37s
+
+Info: Max frequency for clock 'u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.clk_wr_i': 87.46 MHz (PASS at 0.10 MHz)
+Info: Max frequency for clock                                            'u_ibex_demo_system.clk_sys_i': 24.51 MHz (PASS at 10.00 MHz)
+
+Info: Max delay <async>                                                                         -> posedge u_ibex_demo_system.clk_sys_i                                           : 2.33 ns
+Info: Max delay <async>                                                                         -> posedge u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.clk_wr_i: 12.52 ns
+Info: Max delay posedge u_ibex_demo_system.clk_sys_i                                            -> posedge u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.clk_wr_i: 3.89 ns
+Info: Max delay posedge u_ibex_demo_system.clk_sys_i                                            -> negedge u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.clk_wr_i: 2.09 ns
+Info: Max delay posedge u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.clk_wr_i -> posedge u_ibex_demo_system.clk_sys_i                                           : 10.45 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 160 endpoint(s)
+Info:          + represents [1,160) endpoint(s)
+Info: [ 59208, 556180) |************************************************************ 
+Info: [556180, 1053152) | 
+Info: [1053152, 1550124) | 
+Info: [1550124, 2047096) | 
+Info: [2047096, 2544068) | 
+Info: [2544068, 3041040) | 
+Info: [3041040, 3538012) | 
+Info: [3538012, 4034984) | 
+Info: [4034984, 4531956) | 
+Info: [4531956, 5028928) |+
+Info: [5028928, 5525900) | 
+Info: [5525900, 6022872) | 
+Info: [6022872, 6519844) | 
+Info: [6519844, 7016816) | 
+Info: [7016816, 7513788) | 
+Info: [7513788, 8010760) | 
+Info: [8010760, 8507732) | 
+Info: [8507732, 9004704) | 
+Info: [9004704, 9501676) | 
+Info: [9501676, 9998648) |*+
+Info: Checksum: 0x209da224
+Info: Repacking RAMs..
+Info: Repacking CPEs..
+Info: Remove unused clocking cells..
+Info: Routing multipliers...
+Info: Routing clock nets...
+Info:     routing net 'u_ibex_demo_system.clk_sys_i' to 4680 users
+Info:     routing net 'u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.clk_wr_i' to 227 users
+Info: Clock router time 9.11s.
+Info: Running router2...
+Info: Setting up routing resources...
+Info:     x splitpoint: 36
+Info:     y splitpoint: 59
+Info:         bin 0 N=3737
+Info:         bin 1 N=4238
+Info:         bin 2 N=3707
+Info:         bin 3 N=4326
+Info:         bin 4 N=6033
+Info: Running main router loop...
+Info: 1285/22041 nets not multi-threadable
+Info:     iter=1 wires=598240 overused=48810 overuse=53160 resources=21314 overused=1651 overuse=2162 archfail=NA
+Info: 234/10258 nets not multi-threadable
+Info:     iter=2 wires=630028 overused=23923 overuse=24326 resources=22506 overused=649 overuse=735 archfail=NA
+Info: 190/7336 nets not multi-threadable
+Info:     iter=3 wires=642326 overused=16127 overuse=16265 resources=23901 overused=489 overuse=556 archfail=NA
+Info: 326/5743 nets not multi-threadable
+Info:     iter=4 wires=650052 overused=11088 overuse=11163 resources=24947 overused=366 overuse=415 archfail=NA
+Info: 307/4723 nets not multi-threadable
+Info:     iter=5 wires=656779 overused=8204 overuse=8237 resources=25499 overused=291 overuse=328 archfail=NA
+Info: 243/3843 nets not multi-threadable
+Info:     iter=6 wires=661074 overused=6188 overuse=6205 resources=25866 overused=253 overuse=305 archfail=NA
+Info: 321/3237 nets not multi-threadable
+Info:     iter=7 wires=664480 overused=4652 overuse=4666 resources=26040 overused=182 overuse=207 archfail=NA
+Info: 290/2673 nets not multi-threadable
+Info:     iter=8 wires=667655 overused=3734 overuse=3750 resources=26114 overused=155 overuse=174 archfail=NA
+Info: 265/2331 nets not multi-threadable
+Info:     iter=9 wires=669637 overused=3094 overuse=3102 resources=26231 overused=121 overuse=134 archfail=NA
+Info: 342/2041 nets not multi-threadable
+Info:     iter=10 wires=670600 overused=2353 overuse=2356 resources=26030 overused=108 overuse=120 archfail=NA
+Info: 307/1667 nets not multi-threadable
+Info:     iter=11 wires=672033 overused=1739 overuse=1742 resources=26266 overused=80 overuse=85 archfail=NA
+Info: 255/1405 nets not multi-threadable
+Info:     iter=12 wires=673207 overused=1490 overuse=1490 resources=26201 overused=70 overuse=79 archfail=NA
+Info: 301/1226 nets not multi-threadable
+Info:     iter=13 wires=674678 overused=1243 overuse=1244 resources=26261 overused=55 overuse=67 archfail=NA
+Info: 269/1045 nets not multi-threadable
+Info:     iter=14 wires=675849 overused=1063 overuse=1063 resources=26235 overused=44 overuse=53 archfail=NA
+Info: 240/887 nets not multi-threadable
+Info:     iter=15 wires=676031 overused=1037 overuse=1038 resources=26061 overused=37 overuse=43 archfail=NA
+Info: 277/844 nets not multi-threadable
+Info:     iter=16 wires=677032 overused=785 overuse=785 resources=26264 overused=39 overuse=44 archfail=NA
+Info: 250/727 nets not multi-threadable
+Info:     iter=17 wires=677818 overused=630 overuse=630 resources=26239 overused=34 overuse=40 archfail=NA
+Info: 221/614 nets not multi-threadable
+Info:     iter=18 wires=678421 overused=568 overuse=569 resources=26302 overused=36 overuse=41 archfail=NA
+Info: 227/563 nets not multi-threadable
+Info:     iter=19 wires=679078 overused=495 overuse=495 resources=26363 overused=33 overuse=40 archfail=NA
+Info: 224/506 nets not multi-threadable
+Info:     iter=20 wires=679301 overused=462 overuse=462 resources=26354 overused=34 overuse=40 archfail=NA
+Info: 192/432 nets not multi-threadable
+Info:     iter=21 wires=679360 overused=388 overuse=388 resources=26294 overused=28 overuse=33 archfail=NA
+Info: 202/397 nets not multi-threadable
+Info:     iter=22 wires=679759 overused=324 overuse=324 resources=26326 overused=28 overuse=32 archfail=NA
+Info: 193/361 nets not multi-threadable
+Info:     iter=23 wires=679866 overused=289 overuse=290 resources=26233 overused=21 overuse=27 archfail=NA
+Info: 181/312 nets not multi-threadable
+Info:     iter=24 wires=680075 overused=247 overuse=247 resources=26246 overused=25 overuse=31 archfail=NA
+Info: 183/283 nets not multi-threadable
+Info:     iter=25 wires=680344 overused=232 overuse=232 resources=26259 overused=23 overuse=29 archfail=NA
+Info: 169/262 nets not multi-threadable
+Info:     iter=26 wires=680561 overused=221 overuse=221 resources=26240 overused=22 overuse=26 archfail=NA
+Info: 158/244 nets not multi-threadable
+Info:     iter=27 wires=680637 overused=201 overuse=201 resources=26206 overused=16 overuse=23 archfail=NA
+Info: 166/237 nets not multi-threadable
+Info:     iter=28 wires=680725 overused=189 overuse=189 resources=26210 overused=20 overuse=24 archfail=NA
+Info: 155/236 nets not multi-threadable
+Info:     iter=29 wires=680855 overused=168 overuse=168 resources=26214 overused=13 overuse=16 archfail=NA
+Info: 144/203 nets not multi-threadable
+Info:     iter=30 wires=680869 overused=148 overuse=148 resources=26213 overused=11 overuse=13 archfail=NA
+Info:     iter=31 wires=680995 overused=118 overuse=118 resources=26222 overused=10 overuse=13 archfail=NA
+Info:     iter=32 wires=681038 overused=107 overuse=107 resources=26239 overused=9 overuse=12 archfail=NA
+Info:     iter=33 wires=681072 overused=99 overuse=99 resources=26236 overused=9 overuse=11 archfail=NA
+Info:     iter=34 wires=681203 overused=94 overuse=94 resources=26229 overused=9 overuse=13 archfail=NA
+Info:     iter=35 wires=681262 overused=82 overuse=82 resources=26221 overused=7 overuse=9 archfail=NA
+Info:     iter=36 wires=681188 overused=84 overuse=84 resources=26182 overused=7 overuse=9 archfail=NA
+Info:     iter=37 wires=681242 overused=77 overuse=77 resources=26204 overused=7 overuse=8 archfail=NA
+Info:     iter=38 wires=681256 overused=72 overuse=72 resources=26216 overused=5 overuse=8 archfail=NA
+Info:     iter=39 wires=681279 overused=66 overuse=66 resources=26206 overused=5 overuse=7 archfail=NA
+Info:     iter=40 wires=681291 overused=79 overuse=79 resources=26195 overused=5 overuse=7 archfail=NA
+Info:     iter=41 wires=681480 overused=77 overuse=77 resources=26213 overused=7 overuse=11 archfail=NA
+Info:     iter=42 wires=681477 overused=72 overuse=72 resources=26185 overused=5 overuse=7 archfail=NA
+Info:     iter=43 wires=681537 overused=98 overuse=98 resources=26181 overused=5 overuse=6 archfail=NA
+Info:     iter=44 wires=681526 overused=91 overuse=91 resources=26194 overused=8 overuse=11 archfail=NA
+Info:     iter=45 wires=681525 overused=75 overuse=75 resources=26197 overused=8 overuse=10 archfail=NA
+Info:     iter=46 wires=681619 overused=75 overuse=75 resources=26208 overused=7 overuse=10 archfail=NA
+Info:     iter=47 wires=681584 overused=64 overuse=64 resources=26200 overused=7 overuse=9 archfail=NA
+Info:     iter=48 wires=681611 overused=64 overuse=64 resources=26210 overused=7 overuse=10 archfail=NA
+Info:     iter=49 wires=681567 overused=61 overuse=61 resources=26195 overused=6 overuse=8 archfail=NA
+Info:     iter=50 wires=681607 overused=58 overuse=58 resources=26205 overused=6 overuse=9 archfail=NA
+Info:     iter=51 wires=681664 overused=54 overuse=54 resources=26202 overused=6 overuse=9 archfail=NA
+Info:     iter=52 wires=681673 overused=67 overuse=67 resources=26196 overused=4 overuse=6 archfail=NA
+Info:     iter=53 wires=681728 overused=58 overuse=58 resources=26196 overused=5 overuse=7 archfail=NA
+Info:     iter=54 wires=681708 overused=72 overuse=72 resources=26191 overused=4 overuse=6 archfail=NA
+Info:     iter=55 wires=681739 overused=54 overuse=54 resources=26200 overused=5 overuse=7 archfail=NA
+Info:     iter=56 wires=681781 overused=57 overuse=57 resources=26203 overused=4 overuse=6 archfail=NA
+Info:     iter=57 wires=681818 overused=38 overuse=38 resources=26212 overused=7 overuse=9 archfail=NA
+Info:     iter=58 wires=681830 overused=50 overuse=50 resources=26198 overused=4 overuse=6 archfail=NA
+Info:     iter=59 wires=681861 overused=47 overuse=47 resources=26215 overused=7 overuse=9 archfail=NA
+Info:     iter=60 wires=681918 overused=49 overuse=49 resources=26198 overused=4 overuse=6 archfail=NA
+Info:     iter=61 wires=681967 overused=44 overuse=44 resources=26243 overused=6 overuse=8 archfail=NA
+Info:     iter=62 wires=682017 overused=52 overuse=52 resources=26210 overused=6 overuse=9 archfail=NA
+Info:     iter=63 wires=682016 overused=44 overuse=44 resources=26215 overused=5 overuse=6 archfail=NA
+Info:     iter=64 wires=682051 overused=44 overuse=44 resources=26202 overused=6 overuse=7 archfail=NA
+Info:     iter=65 wires=682038 overused=37 overuse=37 resources=26211 overused=4 overuse=5 archfail=NA
+Info:     iter=66 wires=681987 overused=35 overuse=35 resources=26192 overused=5 overuse=6 archfail=NA
+Info:     iter=67 wires=682007 overused=32 overuse=32 resources=26196 overused=3 overuse=4 archfail=NA
+Info:     iter=68 wires=682130 overused=39 overuse=39 resources=26237 overused=2 overuse=3 archfail=NA
+Info:     iter=69 wires=682186 overused=33 overuse=33 resources=26226 overused=2 overuse=2 archfail=NA
+Info:     iter=70 wires=682222 overused=30 overuse=30 resources=26258 overused=3 overuse=5 archfail=NA
+Info:     iter=71 wires=682243 overused=28 overuse=28 resources=26257 overused=3 overuse=4 archfail=NA
+Info:     iter=72 wires=682239 overused=28 overuse=28 resources=26258 overused=3 overuse=5 archfail=NA
+Info:     iter=73 wires=682222 overused=31 overuse=31 resources=26257 overused=3 overuse=4 archfail=NA
+Info:     iter=74 wires=682247 overused=32 overuse=32 resources=26266 overused=3 overuse=5 archfail=NA
+Info:     iter=75 wires=682230 overused=27 overuse=27 resources=26246 overused=2 overuse=2 archfail=NA
+Info:     iter=76 wires=682287 overused=30 overuse=30 resources=26247 overused=3 overuse=4 archfail=NA
+Info:     iter=77 wires=682310 overused=24 overuse=24 resources=26265 overused=3 overuse=4 archfail=NA
+Info:     iter=78 wires=682341 overused=29 overuse=29 resources=26247 overused=2 overuse=3 archfail=NA
+Info:     iter=79 wires=682307 overused=23 overuse=23 resources=26265 overused=3 overuse=4 archfail=NA
+Info:     iter=80 wires=682349 overused=29 overuse=29 resources=26247 overused=3 overuse=4 archfail=NA
+Info:     iter=81 wires=682307 overused=22 overuse=22 resources=26265 overused=3 overuse=4 archfail=NA
+Info:     iter=82 wires=682349 overused=29 overuse=29 resources=26247 overused=2 overuse=3 archfail=NA
+Info:     iter=83 wires=682291 overused=25 overuse=25 resources=26246 overused=2 overuse=2 archfail=NA
+Info:     iter=84 wires=682338 overused=25 overuse=25 resources=26247 overused=2 overuse=3 archfail=NA
+Info:     iter=85 wires=682303 overused=21 overuse=21 resources=26248 overused=1 overuse=1 archfail=NA
+Info:     iter=86 wires=682352 overused=24 overuse=24 resources=26249 overused=1 overuse=2 archfail=NA
+Info:     iter=87 wires=682302 overused=19 overuse=19 resources=26248 overused=1 overuse=1 archfail=NA
+Info:     iter=88 wires=682363 overused=19 overuse=19 resources=26249 overused=1 overuse=2 archfail=NA
+Info:     iter=89 wires=682524 overused=13 overuse=13 resources=26266 overused=1 overuse=2 archfail=NA
+Info:     iter=90 wires=682508 overused=9 overuse=9 resources=26249 overused=1 overuse=2 archfail=NA
+Info:     iter=91 wires=682516 overused=8 overuse=8 resources=26240 overused=2 overuse=2 archfail=NA
+Info:     iter=92 wires=682476 overused=5 overuse=5 resources=26243 overused=0 overuse=0 archfail=NA
+Info:     iter=93 wires=682496 overused=8 overuse=8 resources=26243 overused=0 overuse=0 archfail=NA
+Info:     iter=94 wires=682538 overused=7 overuse=7 resources=26243 overused=0 overuse=0 archfail=NA
+Info:     iter=95 wires=682562 overused=6 overuse=6 resources=26243 overused=0 overuse=0 archfail=NA
+Info:     iter=96 wires=682567 overused=3 overuse=3 resources=26243 overused=0 overuse=0 archfail=NA
+Info:     iter=97 wires=682583 overused=3 overuse=3 resources=26243 overused=0 overuse=0 archfail=NA
+Info:     iter=98 wires=682562 overused=6 overuse=6 resources=26243 overused=0 overuse=0 archfail=NA
+Info:     iter=99 wires=682606 overused=7 overuse=7 resources=26259 overused=2 overuse=3 archfail=NA
+Info:     iter=100 wires=682613 overused=6 overuse=6 resources=26243 overused=1 overuse=2 archfail=NA
+Info:     iter=101 wires=682630 overused=3 overuse=3 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=102 wires=682630 overused=3 overuse=3 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=103 wires=682641 overused=3 overuse=3 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=104 wires=682621 overused=2 overuse=2 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=105 wires=682621 overused=2 overuse=2 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=106 wires=682621 overused=2 overuse=2 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=107 wires=682621 overused=2 overuse=2 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=108 wires=682621 overused=2 overuse=2 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=109 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=110 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=111 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=112 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=113 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=114 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=115 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=116 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=117 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=118 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=119 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=120 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=121 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=122 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=123 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=124 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=125 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=126 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=127 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=128 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=129 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=130 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=131 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=132 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=133 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=134 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=135 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=136 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=137 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=138 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=139 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=140 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=141 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=142 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=143 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=144 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=145 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=146 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=147 wires=682678 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=148 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=149 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=150 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=151 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=152 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=153 wires=682632 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=154 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=155 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=156 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=157 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=158 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=159 wires=682628 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=160 wires=682626 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=161 wires=682631 overused=1 overuse=1 resources=26238 overused=0 overuse=0 archfail=NA
+Info:     iter=162 wires=682677 overused=0 overuse=0 resources=26252 overused=0 overuse=0 archfail=0
+Info: Checksum: 0x86dc0337
+Info: Router2 time 75.00s
+
+Info: Critical path report for clock 'u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.clk_wr_i' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-skew -0.19 -0.19 Net u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.clk_wr_i (59,31) -> (58,48)
+Info:                          Sink $auto$ff.cc:337:slice$15178.CLK_INT
+Info:                           prediction: 10.900000 ns estimate: 10.400000 ns
+Info:                  0.000 X58Y48/CPE.CLK_int/CPE.CLK
+Info:                  0.000 X58Y48/CPE.CLK/IM.P09.Y
+Info:                  0.234 X58Y48/IM.P09.Y/IM.P09.D1/INV
+Info:                  0.202 X58Y48/IM.P09.D1/IM.P09.D1_n
+Info:                  0.000 X58Y46/SB_SML.P09.Y2/SB_SML.P09.Y2_int/INV
+Info:                  0.238 X58Y46/SB_SML.P09.Y2_int/SB_SML.P09.YDIAG_int
+Info:                  0.226 X58Y46/SB_SML.P09.YDIAG_int/SB_SML.P09.X23
+Info:                  0.000 X58Y46/SB_SML.P09.X23/SB_SML.P09.X23_n
+Info:                  0.000 X58Y46/SB_SML.P10.YDIAG/SB_SML.P10.YDIAG_int/INV
+Info:                  0.115 X58Y46/SB_SML.P10.YDIAG_int/SB_SML.P10.Y2_int
+Info:                  0.249 X58Y46/SB_SML.P10.Y2_int/SB_SML.P10.D2_2
+Info:                  0.000 X58Y46/SB_SML.P10.D2_2/SB_SML.P10.D2_2_n
+Info:                  0.462 X58Y44/SB_BIG.P10.Y2/SB_BIG.P10.D7_2/INV
+Info:                  0.000 X58Y44/SB_BIG.P10.D7_2/SB_BIG.P10.D7_2_n
+Info:                  0.200 X58Y24/SB_DRIVE.P10.D2.OUT/SB_DRIVE.P10.D2.IN/INV
+Info:                  0.000 X58Y24/SB_DRIVE.P10.D2.IN/SB_BIG.P10.Y2
+Info:                  0.462 X58Y24/SB_BIG.P10.Y2/SB_BIG.P10.D7_2/INV
+Info:                  0.000 X58Y24/SB_BIG.P10.D7_2/SB_BIG.P10.D7_2_n
+Info:                  0.200 X58Y4/SB_DRIVE.P10.D2.OUT_NOINV/SB_DRIVE.P10.D2.IN
+Info:                  0.000 X58Y4/SB_DRIVE.P10.D2.IN/SB_BIG.P10.Y2
+Info:                  0.462 X58Y4/SB_BIG.P10.Y2/SB_BIG.P10.D7_2/INV
+Info:                  0.000 X58Y4/SB_BIG.P10.D7_2/SB_BIG.P10.D7_2_CLK
+Info:                  0.220 X58Y4/SB_BIG.P10.D7_2_CLK/SB_BIG.P10.D7_2_CLK_n
+Info:                          Defined in:
+Info:                               rtl/prim_fifo_async_simple.sv:17.29
+Info:   clk-to-q  0.59  0.40 Source $auto$ff.cc:337:slice$16078.DOUT
+Info:    routing  2.45  2.85 Net u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_jtag_tap.jtag_ir_q[2] (59,31) -> (57,31)
+Info:                          Sink $abc$115534$blif$115534$1619.D0_00
+Info:                           prediction: 0.300000 ns estimate: 0.300000 ns
+Info:                  0.000 X57Y31/CPE.D0_02_int/CPE.TI6_int
+Info:                  0.011 X57Y31/CPE.TI6_int/CPE.PINY1
+Info:                  0.000 X57Y31/CPE.PINY1/CPE.PINY1_n
+Info:                  0.000 X57Y30/CPE.POUTY1/CPE.PY1_VAL
+Info:                  0.000 X57Y30/CPE.PY1_VAL/CPE.PY1_OUT
+Info:                  0.403 X57Y30/CPE.PY1_OUT/CPE.OUT2_IN_int
+Info:                  0.000 X57Y30/CPE.OUT2_IN_int/CPE.OUT2
+Info:                  0.000 X57Y30/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X57Y30/CPE.OUT2_int/CPE.MUXOUT_int
+Info:                  0.391 X57Y30/CPE.MUXOUT_int/CPE.IN5_int
+Info:                  0.000 X57Y30/CPE.IN5_int/CPE.IN5
+Info:                  0.000 X57Y30/CPE.IN5/IM.P05.Y
+Info:                  0.248 X57Y30/IM.P05.Y/IM.P05.D5/INV
+Info:                  0.244 X57Y30/IM.P05.D5/IM.P05.D5_n
+Info:                  0.248 X58Y31/IM.P05.Y/IM.P05.D5/INV
+Info:                  0.244 X58Y31/IM.P05.D5/IM.P05.D5_n
+Info:                  0.241 X59Y32/IM.P05.Y/IM.P05.D1/INV
+Info:                  0.213 X59Y32/IM.P05.D1/IM.P05.D1_n
+Info:                  0.212 X59Y31/SB_BIG.P05.Y2/SB_BIG.P05.D0/INV
+Info:                  0.000 X59Y31/SB_BIG.P05.D0/SB_BIG.P05.D0_n
+Info:                  0.000 X59Y31/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X59Y31/CPE.OUT1_int/CPE.DOUT1_int
+Info:                          Defined in:
+Info:                               rtl/dmi_jtag_tap.sv:75.36
+Info:      logic  0.55  3.40 Source $abc$115534$blif$115534$1619.OUT
+Info:    routing  3.14  6.54 Net $abc$115534$new_n8006 (57,31) -> (67,45)
+Info:                          Sink $abc$115534$blif$115534$1621.D0_01
+Info:                           prediction: 2.500000 ns estimate: 2.500000 ns
+Info:                  0.000 X67Y45/CPE.D0_03_int/CPE.IN7_int
+Info:                  0.000 X67Y45/CPE.IN7_int/CPE.IN7
+Info:                  0.000 X67Y45/CPE.IN7/IM.P07.Y
+Info:                  0.239 X67Y45/IM.P07.Y/IM.P07.D1/INV
+Info:                  0.213 X67Y45/IM.P07.D1/IM.P07.D1_n
+Info:                  0.231 X67Y43/SB_BIG.P07.Y2/SB_BIG.P07.D3_2/INV
+Info:                  0.000 X67Y43/SB_BIG.P07.D3_2/SB_BIG.P07.D3_2_n
+Info:                  0.231 X67Y39/SB_BIG.P07.Y2/SB_BIG.P07.D3_2/INV
+Info:                  0.000 X67Y39/SB_BIG.P07.D3_2/SB_BIG.P07.D3_2_n
+Info:                  0.231 X67Y35/SB_BIG.P07.Y2/SB_BIG.P07.D3_2/INV
+Info:                  0.000 X67Y35/SB_BIG.P07.D3_2/SB_BIG.P07.D3_2_n
+Info:                  0.240 X67Y31/SB_BIG.P07.Y2/SB_BIG.P07.YDIAG/INV
+Info:                  0.241 X67Y31/SB_BIG.P07.YDIAG/SB_BIG.P07.X14/INV
+Info:                  0.000 X67Y31/SB_BIG.P07.X14/SB_BIG.P07.X14_n
+Info:                  0.241 X67Y31/SB_BIG.P06.YDIAG/SB_BIG.P06.X14/INV
+Info:                  0.000 X67Y31/SB_BIG.P06.X14/SB_BIG.P06.X14_n
+Info:                  0.194 X67Y31/SB_BIG.P05.YDIAG/SB_BIG.P05.Y1/INV
+Info:                  0.267 X67Y31/SB_BIG.P05.Y1/SB_BIG.P05.D2_1/INV
+Info:                  0.000 X67Y31/SB_BIG.P05.D2_1/SB_BIG.P05.D2_1_n
+Info:                  0.000 X65Y31/SB_SML.P05.Y1/SB_SML.P05.Y1_int/INV
+Info:                  0.307 X65Y31/SB_SML.P05.Y1_int/SB_SML.P05.D3_1
+Info:                  0.000 X65Y31/SB_SML.P05.D3_1/SB_SML.P05.D3_1_n
+Info:                  0.000 X61Y31/SB_SML.P05.Y1/SB_SML.P05.Y1_int/INV
+Info:                  0.307 X61Y31/SB_SML.P05.Y1_int/SB_SML.P05.D3_1
+Info:                  0.000 X61Y31/SB_SML.P05.D3_1/SB_SML.P05.D3_1_n
+Info:                  0.000 X57Y31/SB_SML.P05.Y1/SB_SML.P05.Y1_int/INV
+Info:                  0.195 X57Y31/SB_SML.P05.Y1_int/SB_SML.P05.D0
+Info:                  0.000 X57Y31/SB_SML.P05.D0/SB_SML.P05.D0_n
+Info:                  0.000 X57Y31/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X57Y31/CPE.OUT1_int/CPE.COMBOUT1_int
+Info:      logic  0.47  7.01 Source $abc$115534$blif$115534$1621.OUT
+Info:    routing  4.62  11.63 Net $abc$115534$procmux$901_Y (67,45) -> (60,47)
+Info:                          Sink $abc$115534$blif$115534$3866.D0_01
+Info:                           prediction: 1.000000 ns estimate: 1.000000 ns
+Info:                  0.000 X60Y47/CPE.D0_01_int/CPE.IN3_int
+Info:                  0.000 X60Y47/CPE.IN3_int/CPE.IN3
+Info:                  0.000 X60Y47/CPE.IN3/IM.P03.Y
+Info:                  0.294 X60Y47/IM.P03.Y/IM.P03.D6/INV
+Info:                  0.274 X60Y47/IM.P03.D6/IM.P07.Y
+Info:                  0.239 X60Y47/IM.P07.Y/IM.P07.D5/INV
+Info:                  0.235 X60Y47/IM.P07.D5/IM.P07.D5_n
+Info:                  0.252 X61Y48/IM.P07.Y/IM.P07.D2/INV
+Info:                  0.212 X61Y48/IM.P07.D2/IM.P07.D2_n
+Info:                  0.240 X62Y48/SB_BIG.P07.Y3/SB_BIG.P07.YDIAG/INV
+Info:                  0.241 X62Y48/SB_BIG.P07.YDIAG/SB_BIG.P07.X14/INV
+Info:                  0.000 X62Y48/SB_BIG.P07.X14/SB_BIG.P07.X14_n
+Info:                  0.240 X62Y48/SB_BIG.P06.YDIAG/SB_BIG.P06.X34/INV
+Info:                  0.000 X62Y48/SB_BIG.P06.X34/SB_BIG.P06.X34_n
+Info:                  0.000 X63Y49/SB_SML.P06.YDIAG/SB_SML.P06.YDIAG_int/INV
+Info:                  0.121 X63Y49/SB_SML.P06.YDIAG_int/SB_SML.P06.Y2_int
+Info:                  0.217 X63Y49/SB_SML.P06.Y2_int/SB_SML.P06.D3_2
+Info:                  0.000 X63Y49/SB_SML.P06.D3_2/SB_SML.P06.D3_2_n
+Info:                  0.000 X63Y45/SB_SML.P06.Y2/SB_SML.P06.Y2_int/INV
+Info:                  0.220 X63Y45/SB_SML.P06.Y2_int/SB_SML.P06.D0
+Info:                  0.000 X63Y45/SB_SML.P06.D0/SB_SML.P06.D0_n
+Info:                  0.000 X63Y46/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X63Y46/CPE.OUT2_int/CPE.MUXOUT_int
+Info:                  0.391 X63Y46/CPE.MUXOUT_int/CPE.IN5_int
+Info:                  0.000 X63Y46/CPE.IN5_int/CPE.IN5
+Info:                  0.000 X63Y46/CPE.IN5/IM.P05.Y
+Info:                  0.244 X63Y46/IM.P05.Y/IM.P05.D4/INV
+Info:                  0.337 X63Y46/IM.P05.D4/IM.P05.D4_n
+Info:                  0.248 X62Y45/IM.P05.Y/IM.P05.D2/INV
+Info:                  0.208 X62Y45/IM.P05.D2/IM.P05.D2_n
+Info:                  0.000 X63Y45/SB_SML.P05.Y3/SB_SML.P05.Y3_int/INV
+Info:                  0.212 X63Y45/SB_SML.P05.Y3_int/SB_SML.P05.D3_3
+Info:                  0.000 X63Y45/SB_SML.P05.D3_3/SB_SML.P05.D3_3_n
+Info:                  0.000 X67Y45/SB_SML.P05.Y3/SB_SML.P05.Y3_int/INV
+Info:                  0.195 X67Y45/SB_SML.P05.Y3_int/SB_SML.P05.D0
+Info:                  0.000 X67Y45/SB_SML.P05.D0/SB_SML.P05.D0_n
+Info:                  0.000 X67Y45/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X67Y45/CPE.OUT1_int/CPE.COMBOUT1_int
+Info:      logic  0.56  12.19 Source $abc$115534$blif$115534$3866.OUT
+Info:    routing  0.68  12.87 Net $abc$115534$new_n10253 (60,47) -> (58,47)
+Info:                          Sink $abc$115534$blif$115534$4035.D0_01
+Info:                           prediction: 0.300000 ns estimate: 0.300000 ns
+Info:                  0.000 X58Y47/CPE.D0_01_int/CPE.IN3_int
+Info:                  0.000 X58Y47/CPE.IN3_int/CPE.IN3
+Info:                  0.000 X58Y47/CPE.IN3/IM.P03.Y
+Info:                  0.252 X58Y47/IM.P03.Y/IM.P03.D2/INV
+Info:                  0.222 X58Y47/IM.P03.D2/IM.P03.D2_n
+Info:                  0.202 X59Y47/SB_BIG.P03.Y3/SB_BIG.P03.D0/INV
+Info:                  0.000 X59Y47/SB_BIG.P03.D0/SB_BIG.P03.D0_n
+Info:                  0.000 X60Y47/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X60Y47/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.56  13.43 Source $abc$115534$blif$115534$4035.OUT
+Info:    routing  1.63  15.06 Net u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.wr_en (58,47) -> (58,48)
+Info:                          Sink $abc$115534$blif$115534$4337.D0_01
+Info:                           prediction: 0.200000 ns estimate: 0.200000 ns
+Info:                  0.000 X58Y48/CPE.D0_01_int/CPE.IN3_int
+Info:                  0.000 X58Y48/CPE.IN3_int/CPE.IN3
+Info:                  0.000 X58Y48/CPE.IN3/IM.P03.Y
+Info:                  0.244 X58Y48/IM.P03.Y/IM.P03.D1/INV
+Info:                  0.216 X58Y48/IM.P03.D1/IM.P03.D1_n
+Info:                  0.000 X58Y46/SB_SML.P03.Y2/SB_SML.P03.Y2_int/INV
+Info:                  0.236 X58Y46/SB_SML.P03.Y2_int/SB_SML.P03.YDIAG_int
+Info:                  0.243 X58Y46/SB_SML.P03.YDIAG_int/SB_SML.P03.X34
+Info:                  0.000 X58Y46/SB_SML.P03.X34/SB_SML.P03.X34_n
+Info:                  0.201 X59Y47/SB_BIG.P03.YDIAG/SB_BIG.P03.Y1/INV
+Info:                  0.271 X59Y47/SB_BIG.P03.Y1/SB_BIG.P03.D2_1/INV
+Info:                  0.000 X59Y47/SB_BIG.P03.D2_1/SB_BIG.P03.D2_1_n
+Info:                  0.000 X57Y47/SB_SML.P03.Y1/SB_SML.P03.Y1_int/INV
+Info:                  0.219 X57Y47/SB_SML.P03.Y1_int/SB_SML.P03.D0
+Info:                  0.000 X57Y47/SB_SML.P03.D0/SB_SML.P03.D0_n
+Info:                  0.000 X58Y47/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X58Y47/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:                          Defined in:
+Info:                               rtl/prim_fifo_async_simple.sv:36.9
+Info:      logic  0.56  15.62 Source $abc$115534$blif$115534$4337.OUT
+Info:    routing  2.17  17.79 Net $abc$115534$auto$simple.cc:193:make_patterns_logic$10518 (58,48) -> (58,48)
+Info:                          Sink $auto$ff.cc:337:slice$15178.EN_INT
+Info:                           prediction: 0.100000 ns estimate: 0.100000 ns
+Info:                  0.000 X58Y48/CPE.EN_int/CPE.EN
+Info:                  0.000 X58Y48/CPE.EN/IM.P10.Y
+Info:                  0.286 X58Y48/IM.P10.Y/IM.P10.D6/INV
+Info:                  0.267 X58Y48/IM.P10.D6/IM.P12.Y
+Info:                  0.224 X58Y48/IM.P12.Y/IM.P12.D3/INV
+Info:                  0.189 X58Y48/IM.P12.D3/IM.P12.D3_n
+Info:                  0.000 X58Y50/SB_SML.P12.Y4/SB_SML.P12.Y4_int/INV
+Info:                  0.237 X58Y50/SB_SML.P12.Y4_int/SB_SML.P12.YDIAG_int
+Info:                  0.227 X58Y50/SB_SML.P12.YDIAG_int/SB_SML.P12.X12
+Info:                  0.000 X58Y50/SB_SML.P12.X12/SB_SML.P12.X12_n
+Info:                  0.206 X57Y49/SB_BIG.P12.YDIAG/SB_BIG.P12.Y2/INV
+Info:                  0.187 X57Y49/SB_BIG.P12.Y2/SB_BIG.P12.D2_2/INV
+Info:                  0.000 X57Y49/SB_BIG.P12.D2_2/SB_BIG.P12.D2_2_n
+Info:                  0.000 X57Y47/SB_SML.P12.Y2/SB_SML.P12.Y2_int/INV
+Info:                  0.142 X57Y47/SB_SML.P12.Y2_int/SB_SML.P12.D0
+Info:                  0.000 X57Y47/SB_SML.P12.D0/SB_SML.P12.D0_n
+Info:                  0.205 X57Y47/OM.P12.Y/OM.P12.D3/INV
+Info:                  0.000 X57Y47/OM.P12.D3/OM.P12.D3_n
+Info:                  0.000 X58Y48/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X58Y48/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      setup  0.00  17.79 Source $auto$ff.cc:337:slice$15178.EN_INT
+Info: 3.29 ns logic, 14.49 ns routing
+
+Info: Critical path report for clock 'u_ibex_demo_system.clk_sys_i' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-skew -0.72 -0.72 Net u_ibex_demo_system.clk_sys_i (37,93) -> (56,58)
+Info:                          Sink $auto$ff.cc:337:slice$16889.CLK_INT
+Info:                           prediction: 9.700000 ns estimate: 11.200000 ns
+Info:                  0.000 X56Y58/CPE.CLK_int/CPE.CLK
+Info:                  0.000 X56Y58/CPE.CLK/IM.P09.Y
+Info:                  0.234 X56Y58/IM.P09.Y/IM.P09.D1/INV
+Info:                  0.202 X56Y58/IM.P09.D1/IM.P09.D1_n
+Info:                  0.000 X56Y56/SB_SML.P09.Y2/SB_SML.P09.Y2_int/INV
+Info:                  0.248 X56Y56/SB_SML.P09.Y2_int/SB_SML.P09.D2_2
+Info:                  0.000 X56Y56/SB_SML.P09.D2_2/SB_SML.P09.D2_2_n
+Info:                  0.446 X56Y54/SB_BIG.P09.Y2/SB_BIG.P09.D7_2/INV
+Info:                  0.000 X56Y54/SB_BIG.P09.D7_2/SB_BIG.P09.D7_2_n
+Info:                  0.200 X56Y34/SB_DRIVE.P09.D2.OUT/SB_DRIVE.P09.D2.IN/INV
+Info:                  0.000 X56Y34/SB_DRIVE.P09.D2.IN/SB_BIG.P09.Y2
+Info:                  0.446 X56Y34/SB_BIG.P09.Y2/SB_BIG.P09.D7_2/INV
+Info:                  0.000 X56Y34/SB_BIG.P09.D7_2/SB_BIG.P09.D7_2_n
+Info:                  0.200 X56Y14/SB_DRIVE.P09.D2.OUT_NOINV/SB_DRIVE.P09.D2.IN
+Info:                  0.000 X56Y14/SB_DRIVE.P09.D2.IN/SB_BIG.P09.Y2
+Info:                  0.404 X56Y14/SB_BIG.P09.Y2/SB_BIG.P09.D5_2/INV
+Info:                  0.000 X56Y14/SB_BIG.P09.D5_2/SB_BIG.P09.D5_2_n
+Info:                  0.200 X56Y2/SB_DRIVE.P09.D2.OUT_NOINV/SB_DRIVE.P09.D2.IN
+Info:                  0.000 X56Y2/SB_DRIVE.P09.D2.IN/SB_BIG.P09.Y2
+Info:                  0.446 X56Y2/SB_BIG.P09.Y2/SB_BIG.P09.D7_2/INV
+Info:                  0.000 X56Y2/SB_BIG.P09.D7_2/SB_BIG.P09.D7_2_CLK
+Info:                  0.220 X56Y2/SB_BIG.P09.D7_2_CLK/SB_BIG.P09.D7_2_CLK_n
+Info:                          Defined in:
+Info:                               rtl/ibex_demo_system.sv:23.16
+Info:   clk-to-q  0.59 -0.13 Source $auto$ff.cc:337:slice$18951.DOUT
+Info:    routing  1.71  1.58 Net u_ibex_demo_system.u_top.u_ibex_core.load_store_unit_i.ls_fsm_cs[2] (37,93) -> (37,94)
+Info:                          Sink $abc$115534$blif$115534$883.D1_10
+Info:                           prediction: 0.200000 ns estimate: 0.200000 ns
+Info:                  0.000 X37Y94/CPE.D1_10_int/CPE.D0_01_int
+Info:                  0.000 X37Y94/CPE.D0_01_int/CPE.IN3_int
+Info:                  0.000 X37Y94/CPE.IN3_int/CPE.IN3
+Info:                  0.000 X37Y94/CPE.IN3/IM.P03.Y
+Info:                  0.244 X37Y94/IM.P03.Y/IM.P03.D1/INV
+Info:                  0.216 X37Y94/IM.P03.D1/IM.P03.D1_n
+Info:                  0.202 X37Y93/SB_BIG.P03.Y2/SB_BIG.P03.D0/INV
+Info:                  0.000 X37Y93/SB_BIG.P03.D0/SB_BIG.P03.D0_n
+Info:                  0.000 X38Y93/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X38Y93/CPE.OUT2_int/CPE.MUXOUT_int
+Info:                  0.391 X38Y93/CPE.MUXOUT_int/CPE.IN5_int
+Info:                  0.000 X38Y93/CPE.IN5_int/CPE.IN5
+Info:                  0.000 X38Y93/CPE.IN5/IM.P05.Y
+Info:                  0.244 X38Y93/IM.P05.Y/IM.P05.D0/INV
+Info:                  0.203 X38Y93/IM.P05.D0/IM.P05.D0_n
+Info:                  0.211 X37Y93/SB_BIG.P05.Y1/SB_BIG.P05.D0/INV
+Info:                  0.000 X37Y93/SB_BIG.P05.D0/SB_BIG.P05.D0_n
+Info:                  0.000 X37Y93/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X37Y93/CPE.OUT1_int/CPE.DOUT1_int
+Info:      logic  0.56  2.14 Source $abc$115534$blif$115534$883.OUT
+Info:    routing  2.41  4.55 Net $abc$115534$new_n7270 (37,94) -> (22,98)
+Info:                          Sink $abc$115534$blif$115534$884.D0_01
+Info:                           prediction: 2.000000 ns estimate: 2.000000 ns
+Info:                  0.000 X22Y98/CPE.D0_01_int/CPE.IN3_int
+Info:                  0.000 X22Y98/CPE.IN3_int/CPE.IN3
+Info:                  0.000 X22Y98/CPE.IN3/IM.P03.Y
+Info:                  0.252 X22Y98/IM.P03.Y/IM.P03.D2/INV
+Info:                  0.222 X22Y98/IM.P03.D2/IM.P03.D2_n
+Info:                  0.241 X24Y98/SB_BIG.P03.Y3/SB_BIG.P03.D3_3/INV
+Info:                  0.000 X24Y98/SB_BIG.P03.D3_3/SB_BIG.P03.D3_3_n
+Info:                  0.241 X28Y98/SB_BIG.P03.Y3/SB_BIG.P03.D3_3/INV
+Info:                  0.000 X28Y98/SB_BIG.P03.D3_3/SB_BIG.P03.D3_3_n
+Info:                  0.241 X32Y98/SB_BIG.P03.Y3/SB_BIG.P03.D3_3/INV
+Info:                  0.000 X32Y98/SB_BIG.P03.D3_3/SB_BIG.P03.D3_3_n
+Info:                  0.204 X36Y98/SB_BIG.P03.Y3/SB_BIG.P03.D2_3/INV
+Info:                  0.000 X36Y98/SB_BIG.P03.D2_3/SB_BIG.P03.D2_3_n
+Info:                  0.000 X38Y98/SB_SML.P03.Y3/SB_SML.P03.Y3_int/INV
+Info:                  0.236 X38Y98/SB_SML.P03.Y3_int/SB_SML.P03.YDIAG_int
+Info:                  0.232 X38Y98/SB_SML.P03.YDIAG_int/SB_SML.P03.X14
+Info:                  0.000 X38Y98/SB_SML.P03.X14/SB_SML.P03.X14_n
+Info:                  0.000 X38Y98/SB_SML.P02.YDIAG/SB_SML.P02.YDIAG_int/INV
+Info:                  0.120 X38Y98/SB_SML.P02.YDIAG_int/SB_SML.P02.Y2_int
+Info:                  0.228 X38Y98/SB_SML.P02.Y2_int/SB_SML.P02.D3_2
+Info:                  0.000 X38Y98/SB_SML.P02.D3_2/SB_SML.P02.D3_2_n
+Info:                  0.000 X38Y94/SB_SML.P02.Y2/SB_SML.P02.Y2_int/INV
+Info:                  0.189 X38Y94/SB_SML.P02.Y2_int/SB_SML.P02.D0
+Info:                  0.000 X38Y94/SB_SML.P02.D0/SB_SML.P02.D0_n
+Info:                  0.000 X37Y94/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X37Y94/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.56  5.11 Source $abc$115534$blif$115534$884.OUT
+Info:    routing  3.89  9.00 Net $abc$115534$new_n7271 (22,98) -> (27,89)
+Info:                          Sink $abc$115534$blif$115534$1173.D0_00
+Info:                           prediction: 1.500000 ns estimate: 1.500000 ns
+Info:                  0.000 X27Y89/CPE.D0_02_int/CPE.IN5_int
+Info:                  0.000 X27Y89/CPE.IN5_int/CPE.IN5
+Info:                  0.000 X27Y89/CPE.IN5/IM.P05.Y
+Info:                  0.291 X27Y89/IM.P05.Y/IM.P05.D6/INV
+Info:                  0.286 X27Y89/IM.P05.D6/IM.P01.Y
+Info:                  0.243 X27Y89/IM.P01.Y/IM.P01.D5/INV
+Info:                  0.244 X27Y89/IM.P01.D5/IM.P01.D5_n
+Info:                  0.239 X28Y90/IM.P01.Y/IM.P01.D3/INV
+Info:                  0.221 X28Y90/IM.P01.D3/IM.P01.D3_n
+Info:                  0.000 X28Y92/SB_SML.P01.Y4/SB_SML.P01.Y4_int/INV
+Info:                  0.247 X28Y92/SB_SML.P01.Y4_int/SB_SML.P01.D2_4
+Info:                  0.000 X28Y92/SB_SML.P01.D2_4/SB_SML.P01.D2_4_n
+Info:                  0.250 X28Y94/SB_BIG.P01.Y4/SB_BIG.P01.D3_4/INV
+Info:                  0.000 X28Y94/SB_BIG.P01.D3_4/SB_BIG.P01.D3_4_n
+Info:                  0.249 X28Y98/SB_BIG.P01.Y4/SB_BIG.P01.YDIAG/INV
+Info:                  0.241 X28Y98/SB_BIG.P01.YDIAG/SB_BIG.P01.X14/INV
+Info:                  0.000 X28Y98/SB_BIG.P01.X14/SB_BIG.P01.X14_n
+Info:                  0.245 X28Y98/SB_BIG.P12.YDIAG/SB_BIG.P12.X14/INV
+Info:                  0.000 X28Y98/SB_BIG.P12.X14/SB_BIG.P12.X14_n
+Info:                  0.201 X28Y98/SB_BIG.P11.YDIAG/SB_BIG.P11.Y1/INV
+Info:                  0.272 X28Y98/SB_BIG.P11.Y1/SB_BIG.P11.D2_1/INV
+Info:                  0.000 X28Y98/SB_BIG.P11.D2_1/SB_BIG.P11.D2_1_n
+Info:                  0.000 X26Y98/SB_SML.P11.Y1/SB_SML.P11.Y1_int/INV
+Info:                  0.297 X26Y98/SB_SML.P11.Y1_int/SB_SML.P11.D3_1
+Info:                  0.000 X26Y98/SB_SML.P11.D3_1/SB_SML.P11.D3_1_n
+Info:                  0.000 X22Y98/SB_SML.P11.Y1/SB_SML.P11.Y1_int/INV
+Info:                  0.149 X22Y98/SB_SML.P11.Y1_int/SB_SML.P11.D0
+Info:                  0.000 X22Y98/SB_SML.P11.D0/SB_SML.P11.D0_n
+Info:                  0.218 X22Y98/OM.P11.Y/OM.P11.D3/INV
+Info:                  0.000 X22Y98/OM.P11.D3/OM.P11.D3_n
+Info:                  0.000 X22Y98/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X22Y98/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.55  9.55 Source $abc$115534$blif$115534$1173.OUT
+Info:    routing  5.61  15.15 Net $abc$115534$new_n7560 (27,89) -> (27,95)
+Info:                          Sink $abc$115534$blif$115534$1198.D1_00
+Info:                           prediction: 0.700000 ns estimate: 0.700000 ns
+Info:                  0.000 X27Y95/CPE.D1_02_int/CPE.TI6_int
+Info:                  0.000 X27Y95/CPE.TI6_int/CPE.IN6_int
+Info:                  0.000 X27Y95/CPE.IN6_int/CPE.IN6
+Info:                  0.000 X27Y95/CPE.IN6/IM.P06.Y
+Info:                  0.263 X27Y95/IM.P06.Y/IM.P06.D7/INV
+Info:                  0.277 X27Y95/IM.P06.D7/IM.P10.Y
+Info:                  0.276 X27Y95/IM.P10.Y/IM.P10.D7/INV
+Info:                  0.270 X27Y95/IM.P10.D7/IM.P11.Y
+Info:                  0.291 X27Y95/IM.P11.Y/IM.P11.D6/INV
+Info:                  0.273 X27Y95/IM.P11.D6/IM.P09.Y
+Info:                  0.248 X27Y95/IM.P09.Y/IM.P09.D4/INV
+Info:                  0.343 X27Y95/IM.P09.D4/IM.P09.D4_n
+Info:                  0.234 X26Y94/IM.P09.Y/IM.P09.D1/INV
+Info:                  0.202 X26Y94/IM.P09.D1/IM.P09.D1_n
+Info:                  0.229 X26Y92/SB_BIG.P09.Y2/SB_BIG.P09.D3_2/INV
+Info:                  0.000 X26Y92/SB_BIG.P09.D3_2/SB_BIG.P09.D3_2_n
+Info:                  0.253 X26Y88/SB_BIG.P09.Y2/SB_BIG.P09.YDIAG/INV
+Info:                  0.234 X26Y88/SB_BIG.P09.YDIAG/SB_BIG.P09.X14/INV
+Info:                  0.000 X26Y88/SB_BIG.P09.X14/SB_BIG.P09.X14_n
+Info:                  0.239 X26Y88/SB_BIG.P08.YDIAG/SB_BIG.P08.X12/INV
+Info:                  0.000 X26Y88/SB_BIG.P08.X12/SB_BIG.P08.X12_n
+Info:                  0.000 X25Y87/SB_SML.P08.YDIAG/SB_SML.P08.YDIAG_int/INV
+Info:                  0.220 X25Y87/SB_SML.P08.YDIAG_int/SB_SML.P08.X12
+Info:                  0.000 X25Y87/SB_SML.P08.X12/SB_SML.P08.X12_n
+Info:                  0.214 X24Y86/SB_BIG.P08.YDIAG/SB_BIG.P08.Y4/INV
+Info:                  0.235 X24Y86/SB_BIG.P08.Y4/SB_BIG.P08.D3_4/INV
+Info:                  0.000 X24Y86/SB_BIG.P08.D3_4/SB_BIG.P08.D3_4_n
+Info:                  0.242 X24Y90/SB_BIG.P08.Y4/SB_BIG.P08.YDIAG/INV
+Info:                  0.246 X24Y90/SB_BIG.P08.YDIAG/SB_BIG.P08.X23/INV
+Info:                  0.000 X24Y90/SB_BIG.P08.X23/SB_BIG.P08.X23_n
+Info:                  0.248 X24Y90/SB_BIG.P09.YDIAG/SB_BIG.P09.Y3/INV
+Info:                  0.232 X24Y90/SB_BIG.P09.Y3/SB_BIG.P09.D3_3/INV
+Info:                  0.000 X24Y90/SB_BIG.P09.D3_3/SB_BIG.P09.D3_3_n
+Info:                  0.148 X28Y90/SB_BIG.P09.Y3/SB_BIG.P09.D0/INV
+Info:                  0.000 X28Y90/SB_BIG.P09.D0/SB_BIG.P09.D0_n
+Info:                  0.188 X28Y90/OM.P09.Y/OM.P09.D0/INV
+Info:                  0.000 X28Y90/OM.P09.D0/OM.P09.D0_n
+Info:                  0.000 X27Y89/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X27Y89/CPE.OUT1_int/CPE.COMBOUT1_int
+Info:      logic  0.57  15.73 Source $abc$115534$blif$115534$1198.OUT
+Info:    routing  1.33  17.06 Net $abc$115534$new_n7585 (27,95) -> (27,96)
+Info:                          Sink $abc$115534$blif$115534$6051.D0_01
+Info:                           prediction: 0.200000 ns estimate: 0.200000 ns
+Info:                  0.000 X27Y96/CPE.D0_03_int/CPE.TI8_int
+Info:                  0.000 X27Y96/CPE.TI8_int/CPE.IN8_int
+Info:                  0.000 X27Y96/CPE.IN8_int/CPE.IN8
+Info:                  0.000 X27Y96/CPE.IN8/IM.P08.Y
+Info:                  0.272 X27Y96/IM.P08.Y/IM.P08.D7/INV
+Info:                  0.267 X27Y96/IM.P08.D7/IM.P12.Y
+Info:                  0.221 X27Y96/IM.P12.Y/IM.P12.D1/INV
+Info:                  0.201 X27Y96/IM.P12.D1/IM.P12.D1_n
+Info:                  0.154 X27Y95/SB_BIG.P12.Y2/SB_BIG.P12.D0/INV
+Info:                  0.000 X27Y95/SB_BIG.P12.D0/SB_BIG.P12.D0_n
+Info:                  0.216 X27Y95/OM.P12.Y/OM.P12.D0/INV
+Info:                  0.000 X27Y95/OM.P12.D0/OM.P12.D0_n
+Info:                  0.000 X27Y95/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X27Y95/CPE.OUT1_int/CPE.COMBOUT1_int
+Info:      logic  0.47  17.53 Source $abc$115534$blif$115534$6051.OUT
+Info:    routing  1.53  19.07 Net $abc$115534$new_n12438 (27,96) -> (26,97)
+Info:                          Sink $abc$115534$blif$115534$6052.D0_01
+Info:                           prediction: 0.300000 ns estimate: 0.300000 ns
+Info:                  0.000 X26Y97/CPE.D0_01_int/CPE.IN3_int
+Info:                  0.000 X26Y97/CPE.IN3_int/CPE.IN3
+Info:                  0.000 X26Y97/CPE.IN3/IM.P03.Y
+Info:                  0.252 X26Y97/IM.P03.Y/IM.P03.D2/INV
+Info:                  0.222 X26Y97/IM.P03.D2/IM.P03.D2_n
+Info:                  0.000 X27Y97/SB_SML.P03.Y3/SB_SML.P03.Y3_int/INV
+Info:                  0.236 X27Y97/SB_SML.P03.Y3_int/SB_SML.P03.YDIAG_int
+Info:                  0.232 X27Y97/SB_SML.P03.YDIAG_int/SB_SML.P03.X14
+Info:                  0.000 X27Y97/SB_SML.P03.X14/SB_SML.P03.X14_n
+Info:                  0.000 X27Y97/SB_SML.P02.YDIAG/SB_SML.P02.YDIAG_int/INV
+Info:                  0.120 X27Y97/SB_SML.P02.YDIAG_int/SB_SML.P02.Y2_int
+Info:                  0.258 X27Y97/SB_SML.P02.Y2_int/SB_SML.P02.D2_2
+Info:                  0.000 X27Y97/SB_SML.P02.D2_2/SB_SML.P02.D2_2_n
+Info:                  0.214 X27Y95/SB_BIG.P02.Y2/SB_BIG.P02.D0/INV
+Info:                  0.000 X27Y95/SB_BIG.P02.D0/SB_BIG.P02.D0_n
+Info:                  0.000 X27Y96/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X27Y96/CPE.OUT1_int/CPE.COMBOUT1_int
+Info:      logic  0.56  19.62 Source $abc$115534$blif$115534$6052.OUT
+Info:    routing  5.69  25.32 Net $abc$115534$new_n12439 (26,97) -> (25,111)
+Info:                          Sink $abc$115534$blif$115534$6056.D1_00
+Info:                           prediction: 1.600000 ns estimate: 1.600000 ns
+Info:                  0.000 X25Y111/CPE.D1_02_int/CPE.TI6_int
+Info:                  0.000 X25Y111/CPE.TI6_int/CPE.IN6_int
+Info:                  0.000 X25Y111/CPE.IN6_int/CPE.IN6
+Info:                  0.000 X25Y111/CPE.IN6/IM.P06.Y
+Info:                  0.233 X25Y111/IM.P06.Y/IM.P06.D4/INV
+Info:                  0.329 X25Y111/IM.P06.D4/IM.P06.D4_n
+Info:                  0.263 X24Y110/IM.P06.Y/IM.P06.D7/INV
+Info:                  0.277 X24Y110/IM.P06.D7/IM.P10.Y
+Info:                  0.276 X24Y110/IM.P10.Y/IM.P10.D7/INV
+Info:                  0.270 X24Y110/IM.P10.D7/IM.P11.Y
+Info:                  0.291 X24Y110/IM.P11.Y/IM.P11.D6/INV
+Info:                  0.273 X24Y110/IM.P11.D6/IM.P09.Y
+Info:                  0.248 X24Y110/IM.P09.Y/IM.P09.D4/INV
+Info:                  0.343 X24Y110/IM.P09.D4/IM.P09.D4_n
+Info:                  0.251 X23Y109/IM.P09.Y/IM.P09.D2/INV
+Info:                  0.206 X23Y109/IM.P09.D2/IM.P09.D2_n
+Info:                  0.253 X25Y109/SB_BIG.P09.Y3/SB_BIG.P09.YDIAG/INV
+Info:                  0.234 X25Y109/SB_BIG.P09.YDIAG/SB_BIG.P09.X14/INV
+Info:                  0.000 X25Y109/SB_BIG.P09.X14/SB_BIG.P09.X14_n
+Info:                  0.209 X25Y109/SB_BIG.P08.YDIAG/SB_BIG.P08.Y2/INV
+Info:                  0.240 X25Y109/SB_BIG.P08.Y2/SB_BIG.P08.D3_2/INV
+Info:                  0.000 X25Y109/SB_BIG.P08.D3_2/SB_BIG.P08.D3_2_n
+Info:                  0.240 X25Y105/SB_BIG.P08.Y2/SB_BIG.P08.D3_2/INV
+Info:                  0.000 X25Y105/SB_BIG.P08.D3_2/SB_BIG.P08.D3_2_n
+Info:                  0.240 X25Y101/SB_BIG.P08.Y2/SB_BIG.P08.D3_2/INV
+Info:                  0.000 X25Y101/SB_BIG.P08.D3_2/SB_BIG.P08.D3_2_n
+Info:                  0.242 X25Y97/SB_BIG.P08.Y2/SB_BIG.P08.YDIAG/INV
+Info:                  0.237 X25Y97/SB_BIG.P08.YDIAG/SB_BIG.P08.X14/INV
+Info:                  0.000 X25Y97/SB_BIG.P08.X14/SB_BIG.P08.X14_n
+Info:                  0.234 X25Y97/SB_BIG.P07.YDIAG/SB_BIG.P07.X34/INV
+Info:                  0.000 X25Y97/SB_BIG.P07.X34/SB_BIG.P07.X34_n
+Info:                  0.000 X26Y98/SB_SML.P07.YDIAG/SB_SML.P07.YDIAG_int/INV
+Info:                  0.112 X26Y98/SB_SML.P07.YDIAG_int/SB_SML.P07.Y4_int
+Info:                  0.192 X26Y98/SB_SML.P07.Y4_int/SB_SML.P07.D0
+Info:                  0.000 X26Y98/SB_SML.P07.D0/SB_SML.P07.D0_n
+Info:                  0.000 X26Y97/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X26Y97/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.57  25.89 Source $abc$115534$blif$115534$6056.OUT
+Info:    routing  1.94  27.83 Net $abc$115534$new_n12443 (25,111) -> (25,118)
+Info:                          Sink $abc$115534$blif$115534$6057.D0_01
+Info:                           prediction: 0.800000 ns estimate: 0.800000 ns
+Info:                  0.000 X25Y118/CPE.D0_03_int/CPE.TI8_int
+Info:                  0.000 X25Y118/CPE.TI8_int/CPE.IN8_int
+Info:                  0.000 X25Y118/CPE.IN8_int/CPE.IN8
+Info:                  0.000 X25Y118/CPE.IN8/IM.P08.Y
+Info:                  0.236 X25Y118/IM.P08.Y/IM.P08.D1/INV
+Info:                  0.211 X25Y118/IM.P08.D1/IM.P08.D1_n
+Info:                  0.205 X25Y117/SB_BIG.P08.Y2/SB_BIG.P08.D0/INV
+Info:                  0.000 X25Y117/SB_BIG.P08.D0/SB_BIG.P08.D0_n
+Info:                  0.000 X26Y118/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X26Y118/CPE.OUT2_int/CPE.MUXOUT_int
+Info:                  0.403 X26Y118/CPE.MUXOUT_int/CPE.IN1_int
+Info:                  0.000 X26Y118/CPE.IN1_int/CPE.IN1
+Info:                  0.000 X26Y118/CPE.IN1/IM.P01.Y
+Info:                  0.239 X26Y118/IM.P01.Y/IM.P01.D1/INV
+Info:                  0.219 X26Y118/IM.P01.D1/IM.P01.D1_n
+Info:                  0.234 X26Y116/SB_BIG.P01.Y2/SB_BIG.P01.D3_2/INV
+Info:                  0.000 X26Y116/SB_BIG.P01.D3_2/SB_BIG.P01.D3_2_n
+Info:                  0.192 X26Y112/SB_BIG.P01.Y2/SB_BIG.P01.D0/INV
+Info:                  0.000 X26Y112/SB_BIG.P01.D0/SB_BIG.P01.D0_n
+Info:                  0.000 X25Y111/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X25Y111/CPE.OUT1_int/CPE.COMBOUT1_int
+Info:      logic  0.47  28.30 Source $abc$115534$blif$115534$6057.OUT
+Info:    routing  2.55  30.85 Net u_ibex_demo_system.u_top.u_ibex_core.ex_block_i.alu_i.adder_in_b[16] (25,118) -> (24,109)
+Info:                          Sink $auto$alumacc.cc:578:replace_alu$11280.slice[17].addf_i.D0_03
+Info:                           prediction: 1.100000 ns estimate: 1.100000 ns
+Info:                  0.000 X24Y109/CPE.D0_03_int/CPE.TI8_int
+Info:                  0.000 X24Y109/CPE.TI8_int/CPE.IN8_int
+Info:                  0.000 X24Y109/CPE.IN8_int/CPE.IN8
+Info:                  0.000 X24Y109/CPE.IN8/IM.P08.Y
+Info:                  0.237 X24Y109/IM.P08.Y/IM.P08.D5/INV
+Info:                  0.250 X24Y109/IM.P08.D5/IM.P08.D5_n
+Info:                  0.239 X25Y110/IM.P08.Y/IM.P08.D3/INV
+Info:                  0.190 X25Y110/IM.P08.D3/IM.P08.D3_n
+Info:                  0.000 X25Y111/SB_SML.P08.Y4/SB_SML.P08.Y4_int/INV
+Info:                  0.218 X25Y111/SB_SML.P08.Y4_int/SB_SML.P08.D3_4
+Info:                  0.000 X25Y111/SB_SML.P08.D3_4/SB_SML.P08.D3_4_n
+Info:                  0.000 X25Y115/SB_SML.P08.Y4/SB_SML.P08.Y4_int/INV
+Info:                  0.244 X25Y115/SB_SML.P08.Y4_int/SB_SML.P08.D2_4
+Info:                  0.000 X25Y115/SB_SML.P08.D2_4/SB_SML.P08.D2_4_n
+Info:                  0.242 X25Y117/SB_BIG.P08.Y4/SB_BIG.P08.YDIAG/INV
+Info:                  0.246 X25Y117/SB_BIG.P08.YDIAG/SB_BIG.P08.X23/INV
+Info:                  0.000 X25Y117/SB_BIG.P08.X23/SB_BIG.P08.X23_n
+Info:                  0.234 X25Y117/SB_BIG.P09.YDIAG/SB_BIG.P09.X34/INV
+Info:                  0.000 X25Y117/SB_BIG.P09.X34/SB_BIG.P09.X34_n
+Info:                  0.000 X26Y118/SB_SML.P09.YDIAG/SB_SML.P09.YDIAG_int/INV
+Info:                  0.114 X26Y118/SB_SML.P09.YDIAG_int/SB_SML.P09.Y4_int
+Info:                  0.144 X26Y118/SB_SML.P09.Y4_int/SB_SML.P09.D0
+Info:                  0.000 X26Y118/SB_SML.P09.D0/SB_SML.P09.D0_n
+Info:                  0.190 X26Y118/OM.P09.Y/OM.P09.D1/INV
+Info:                  0.000 X26Y118/OM.P09.D1/OM.P09.D1_n
+Info:                  0.000 X25Y118/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X25Y118/CPE.OUT1_int/CPE.COMBOUT1_int
+Info:                          Defined in:
+Info:                               rtl/ibex_alu.sv:52.28
+Info:      logic  0.48  31.33 Source $auto$alumacc.cc:578:replace_alu$11280.slice[17].addf_i.COUTY1
+Info:    routing  0.00  31.33 Net $auto$alumacc.cc:578:replace_alu$11280.CO[17] (24,109) -> (24,110)
+Info:                          Sink $auto$alumacc.cc:578:replace_alu$11280.slice[19].addf_i.CINY1
+Info:                           prediction: 0.200000 ns estimate: 0.200000 ns
+Info:                  0.000 X24Y110/CPE.CINY1/CPE.CINY1_n
+Info:                          Defined in:
+Info:                               rtl/ibex_alu.sv:105.31-105.76
+Info:                               /home/kasachstan_horse67/toolchains/oss-cad-suite/lib/../share/yosys/gatemate/arith_map.v:37.23-37.25
+Info:      logic  0.42  31.75 Source $auto$alumacc.cc:578:replace_alu$11280.slice[19].addf_i.OUT2
+Info:    routing  2.53  34.27 Net u_ibex_demo_system.host_addr[50] (24,110) -> (23,109)
+Info:                          Sink $auto$gatemate_foldinv.cc:169:fold_output_inverters$122644.D0_10
+Info:                           prediction: 0.300000 ns estimate: 0.300000 ns
+Info:                  0.000 X23Y109/CPE.D0_11_int/CPE.D0_02_int
+Info:                  0.000 X23Y109/CPE.D0_02_int/CPE.TI6_int
+Info:                  0.000 X23Y109/CPE.TI6_int/CPE.IN6_int
+Info:                  0.000 X23Y109/CPE.IN6_int/CPE.IN6
+Info:                  0.000 X23Y109/CPE.IN6/IM.P06.Y
+Info:                  0.263 X23Y109/IM.P06.Y/IM.P06.D7/INV
+Info:                  0.277 X23Y109/IM.P06.D7/IM.P10.Y
+Info:                  0.243 X23Y109/IM.P10.Y/IM.P10.D3/INV
+Info:                  0.195 X23Y109/IM.P10.D3/IM.P10.D3_n
+Info:                  0.240 X23Y111/SB_BIG.P10.Y4/SB_BIG.P10.D3_4/INV
+Info:                  0.000 X23Y111/SB_BIG.P10.D3_4/SB_BIG.P10.D3_4_n
+Info:                  0.188 X23Y115/SB_BIG.P10.Y4/SB_BIG.P10.D2_4/INV
+Info:                  0.000 X23Y115/SB_BIG.P10.D2_4/SB_BIG.P10.D2_4_n
+Info:                  0.000 X23Y117/SB_SML.P10.Y4/SB_SML.P10.Y4_int/INV
+Info:                  0.234 X23Y117/SB_SML.P10.Y4_int/SB_SML.P10.YDIAG_int
+Info:                  0.115 X23Y117/SB_SML.P10.YDIAG_int/SB_SML.P10.Y2_int
+Info:                  0.219 X23Y117/SB_SML.P10.Y2_int/SB_SML.P10.D3_2
+Info:                  0.000 X23Y117/SB_SML.P10.D3_2/SB_SML.P10.D3_2_n
+Info:                  0.000 X23Y113/SB_SML.P10.Y2/SB_SML.P10.Y2_int/INV
+Info:                  0.219 X23Y113/SB_SML.P10.Y2_int/SB_SML.P10.D3_2
+Info:                  0.000 X23Y113/SB_SML.P10.D3_2/SB_SML.P10.D3_2_n
+Info:                  0.000 X23Y109/SB_SML.P10.Y2/SB_SML.P10.Y2_int/INV
+Info:                  0.138 X23Y109/SB_SML.P10.Y2_int/SB_SML.P10.D0
+Info:                  0.000 X23Y109/SB_SML.P10.D0/SB_SML.P10.D0_n
+Info:                  0.195 X23Y109/OM.P10.Y/OM.P10.D3/INV
+Info:                  0.000 X23Y109/OM.P10.D3/OM.P10.D3_n
+Info:                  0.000 X24Y110/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X24Y110/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:                          Defined in:
+Info:                               rtl/ibex_load_store_unit.sv:75.30
+Info:      logic  0.55  34.82 Source $auto$gatemate_foldinv.cc:169:fold_output_inverters$122644.OUT
+Info:    routing  5.27  40.09 Net $abc$115534$new_n7629 (23,109) -> (47,81)
+Info:                          Sink $abc$115534$blif$115534$1517.D1_01
+Info:                           prediction: 5.300000 ns estimate: 5.300000 ns
+Info:                  0.000 X47Y81/CPE.D1_01_int/CPE.TI4_int
+Info:                  0.000 X47Y81/CPE.TI4_int/CPE.IN4_int
+Info:                  0.000 X47Y81/CPE.IN4_int/CPE.IN4
+Info:                  0.000 X47Y81/CPE.IN4/IM.P04.Y
+Info:                  0.264 X47Y81/IM.P04.Y/IM.P04.D7/INV
+Info:                  0.266 X47Y81/IM.P04.D7/IM.P12.Y
+Info:                  0.233 X47Y81/IM.P12.Y/IM.P12.D2/INV
+Info:                  0.207 X47Y81/IM.P12.D2/IM.P12.D2_n
+Info:                  0.250 X49Y81/SB_BIG.P12.Y3/SB_BIG.P12.YDIAG/INV
+Info:                  0.247 X49Y81/SB_BIG.P12.YDIAG/SB_BIG.P12.X23/INV
+Info:                  0.000 X49Y81/SB_BIG.P12.X23/SB_BIG.P12.X23_n
+Info:                  0.237 X49Y81/SB_BIG.P01.YDIAG/SB_BIG.P01.X34/INV
+Info:                  0.000 X49Y81/SB_BIG.P01.X34/SB_BIG.P01.X34_n
+Info:                  0.000 X50Y82/SB_SML.P01.YDIAG/SB_SML.P01.YDIAG_int/INV
+Info:                  0.112 X50Y82/SB_SML.P01.YDIAG_int/SB_SML.P01.Y1_int
+Info:                  0.335 X50Y82/SB_SML.P01.Y1_int/SB_SML.P01.D2_1
+Info:                  0.000 X50Y82/SB_SML.P01.D2_1/SB_SML.P01.D2_1_n
+Info:                  0.314 X48Y82/SB_BIG.P01.Y1/SB_BIG.P01.D3_1/INV
+Info:                  0.000 X48Y82/SB_BIG.P01.D3_1/SB_BIG.P01.D3_1_n
+Info:                  0.560 X44Y82/SB_BIG.P01.Y1/SB_BIG.P01.D7_1/INV
+Info:                  0.000 X44Y82/SB_BIG.P01.D7_1/SB_BIG.P01.D7_1_n
+Info:                  0.200 X24Y82/SB_DRIVE.P01.D1.OUT/SB_DRIVE.P01.D1.IN/INV
+Info:                  0.000 X24Y82/SB_DRIVE.P01.D1.IN/SB_BIG.P01.Y1
+Info:                  0.249 X24Y82/SB_BIG.P01.Y1/SB_BIG.P01.YDIAG/INV
+Info:                  0.224 X24Y82/SB_BIG.P01.YDIAG/SB_BIG.P01.Y4/INV
+Info:                  0.426 X24Y82/SB_BIG.P01.Y4/SB_BIG.P01.D6_4/INV
+Info:                  0.000 X24Y82/SB_BIG.P01.D6_4/SB_BIG.P01.D6_4_n
+Info:                  0.200 X24Y98/SB_DRIVE.P01.D4.OUT_NOINV/SB_DRIVE.P01.D4.IN
+Info:                  0.000 X24Y98/SB_DRIVE.P01.D4.IN/SB_BIG.P01.Y4
+Info:                  0.250 X24Y98/SB_BIG.P01.Y4/SB_BIG.P01.D3_4/INV
+Info:                  0.000 X24Y98/SB_BIG.P01.D3_4/SB_BIG.P01.D3_4_n
+Info:                  0.250 X24Y102/SB_BIG.P01.Y4/SB_BIG.P01.D3_4/INV
+Info:                  0.000 X24Y102/SB_BIG.P01.D3_4/SB_BIG.P01.D3_4_n
+Info:                  0.250 X24Y106/SB_BIG.P01.Y4/SB_BIG.P01.D3_4/INV
+Info:                  0.000 X24Y106/SB_BIG.P01.D3_4/SB_BIG.P01.D3_4_n
+Info:                  0.193 X24Y110/SB_BIG.P01.Y4/SB_BIG.P01.D0/INV
+Info:                  0.000 X24Y110/SB_BIG.P01.D0/SB_BIG.P01.D0_n
+Info:                  0.000 X23Y109/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X23Y109/CPE.OUT1_int/CPE.COMBOUT1_int
+Info:      logic  0.60  40.69 Source $abc$115534$blif$115534$1517.OUT
+Info:    routing  2.07  42.76 Net $abc$115534$new_n7904 (47,81) -> (51,80)
+Info:                          Sink $abc$115534$blif$115534$1737.D1_00
+Info:                           prediction: 0.600000 ns estimate: 0.600000 ns
+Info:                  0.000 X51Y80/CPE.D1_02_int/CPE.IN5_int
+Info:                  0.000 X51Y80/CPE.IN5_int/CPE.IN5
+Info:                  0.000 X51Y80/CPE.IN5/IM.P05.Y
+Info:                  0.244 X51Y80/IM.P05.Y/IM.P05.D0/INV
+Info:                  0.203 X51Y80/IM.P05.D0/IM.P05.D0_n
+Info:                  0.267 X50Y80/SB_BIG.P05.Y1/SB_BIG.P05.D2_1/INV
+Info:                  0.000 X50Y80/SB_BIG.P05.D2_1/SB_BIG.P05.D2_1_n
+Info:                  0.000 X48Y80/SB_SML.P05.Y1/SB_SML.P05.Y1_int/INV
+Info:                  0.238 X48Y80/SB_SML.P05.Y1_int/SB_SML.P05.YDIAG_int
+Info:                  0.223 X48Y80/SB_SML.P05.YDIAG_int/SB_SML.P05.X34
+Info:                  0.000 X48Y80/SB_SML.P05.X34/SB_SML.P05.X34_n
+Info:                  0.243 X49Y81/SB_BIG.P05.YDIAG/SB_BIG.P05.X34/INV
+Info:                  0.000 X49Y81/SB_BIG.P05.X34/SB_BIG.P05.X34_n
+Info:                  0.000 X50Y82/SB_SML.P05.YDIAG/SB_SML.P05.YDIAG_int/INV
+Info:                  0.110 X50Y82/SB_SML.P05.YDIAG_int/SB_SML.P05.Y1_int
+Info:                  0.334 X50Y82/SB_SML.P05.Y1_int/SB_SML.P05.D2_1
+Info:                  0.000 X50Y82/SB_SML.P05.D2_1/SB_SML.P05.D2_1_n
+Info:                  0.211 X48Y82/SB_BIG.P05.Y1/SB_BIG.P05.D0/INV
+Info:                  0.000 X48Y82/SB_BIG.P05.D0/SB_BIG.P05.D0_n
+Info:                  0.000 X47Y81/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X47Y81/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.57  43.33 Source $abc$115534$blif$115534$1737.OUT
+Info:    routing  3.29  46.63 Net $abc$115534$new_n8124 (51,80) -> (53,78)
+Info:                          Sink $abc$115534$blif$115534$1738.D0_01
+Info:                           prediction: 0.500000 ns estimate: 0.500000 ns
+Info:                  0.000 X53Y78/CPE.D0_01_int/CPE.TI4_int
+Info:                  0.000 X53Y78/CPE.TI4_int/CPE.IN4_int
+Info:                  0.000 X53Y78/CPE.IN4_int/CPE.IN4
+Info:                  0.000 X53Y78/CPE.IN4/IM.P04.Y
+Info:                  0.264 X53Y78/IM.P04.Y/IM.P04.D7/INV
+Info:                  0.266 X53Y78/IM.P04.D7/IM.P12.Y
+Info:                  0.273 X53Y78/IM.P12.Y/IM.P12.D6/INV
+Info:                  0.275 X53Y78/IM.P12.D6/IM.P10.Y
+Info:                  0.243 X53Y78/IM.P10.Y/IM.P10.D0/INV
+Info:                  0.206 X53Y78/IM.P10.D0/IM.P10.D0_n
+Info:                  0.252 X52Y78/SB_BIG.P10.Y1/SB_BIG.P10.YDIAG/INV
+Info:                  0.242 X52Y78/SB_BIG.P10.YDIAG/SB_BIG.P10.X23/INV
+Info:                  0.000 X52Y78/SB_BIG.P10.X23/SB_BIG.P10.X23_n
+Info:                  0.238 X52Y78/SB_BIG.P11.YDIAG/SB_BIG.P11.X34/INV
+Info:                  0.000 X52Y78/SB_BIG.P11.X34/SB_BIG.P11.X34_n
+Info:                  0.000 X53Y79/SB_SML.P11.YDIAG/SB_SML.P11.YDIAG_int/INV
+Info:                  0.223 X53Y79/SB_SML.P11.YDIAG_int/SB_SML.P11.X34
+Info:                  0.000 X53Y79/SB_SML.P11.X34/SB_SML.P11.X34_n
+Info:                  0.201 X54Y80/SB_BIG.P11.YDIAG/SB_BIG.P11.Y1/INV
+Info:                  0.272 X54Y80/SB_BIG.P11.Y1/SB_BIG.P11.D2_1/INV
+Info:                  0.000 X54Y80/SB_BIG.P11.D2_1/SB_BIG.P11.D2_1_n
+Info:                  0.000 X52Y80/SB_SML.P11.Y1/SB_SML.P11.Y1_int/INV
+Info:                  0.149 X52Y80/SB_SML.P11.Y1_int/SB_SML.P11.D0
+Info:                  0.000 X52Y80/SB_SML.P11.D0/SB_SML.P11.D0_n
+Info:                  0.190 X52Y80/OM.P11.Y/OM.P11.D1/INV
+Info:                  0.000 X52Y80/OM.P11.D1/OM.P11.D1_n
+Info:                  0.000 X51Y80/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X51Y80/CPE.OUT1_int/CPE.COMBOUT1_int
+Info:      logic  0.56  47.19 Source $abc$115534$blif$115534$1738.OUT
+Info:    routing  1.35  48.54 Net $abc$115534$new_n8125 (53,78) -> (53,79)
+Info:                          Sink $abc$115534$blif$115534$2000.D0_01
+Info:                           prediction: 0.200000 ns estimate: 0.200000 ns
+Info:                  0.000 X53Y79/CPE.D0_01_int/CPE.IN3_int
+Info:                  0.000 X53Y79/CPE.IN3_int/CPE.IN3
+Info:                  0.000 X53Y79/CPE.IN3/IM.P03.Y
+Info:                  0.280 X53Y79/IM.P03.Y/IM.P03.D7/INV
+Info:                  0.274 X53Y79/IM.P03.D7/IM.P11.Y
+Info:                  0.242 X53Y79/IM.P11.Y/IM.P11.D1/INV
+Info:                  0.213 X53Y79/IM.P11.D1/IM.P11.D1_n
+Info:                  0.154 X53Y77/SB_BIG.P11.Y2/SB_BIG.P11.D0/INV
+Info:                  0.000 X53Y77/SB_BIG.P11.D0/SB_BIG.P11.D0_n
+Info:                  0.190 X53Y77/OM.P11.Y/OM.P11.D1/INV
+Info:                  0.000 X53Y77/OM.P11.D1/OM.P11.D1_n
+Info:                  0.000 X53Y78/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X53Y78/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.56  49.10 Source $abc$115534$blif$115534$2000.OUT
+Info:    routing  0.67  49.77 Net $abc$115534$new_n8387 (53,79) -> (56,79)
+Info:                          Sink $abc$115534$blif$115534$2157.D1_01
+Info:                           prediction: 0.400000 ns estimate: 0.400000 ns
+Info:                  0.000 X56Y79/CPE.D1_01_int/CPE.TI4_int
+Info:                  0.011 X56Y79/CPE.TI4_int/CPE.CINX
+Info:                  0.000 X56Y79/CPE.CINX/CPE.CINX_n
+Info:                  0.116 X55Y79/CPE.COUTX/CPE.CINX
+Info:                  0.000 X55Y79/CPE.CINX/CPE.CINX_n
+Info:                  0.116 X54Y79/CPE.COUTX/CPE.CINX
+Info:                  0.000 X54Y79/CPE.CINX/CPE.CINX_n
+Info:                  0.000 X53Y79/CPE.COUTX/CPE.CX_VAL
+Info:                  0.000 X53Y79/CPE.CX_VAL/CPE.CX_OUT
+Info:                  0.428 X53Y79/CPE.CX_OUT/CPE.OUT2_IN_int
+Info:                  0.000 X53Y79/CPE.OUT2_IN_int/CPE.OUT2
+Info:                  0.000 X53Y79/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X53Y79/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.60  50.37 Source $abc$115534$blif$115534$2157.OUT
+Info:    routing  2.28  52.64 Net $abc$115534$new_n8544 (56,79) -> (56,87)
+Info:                          Sink $abc$115534$blif$115534$2830.D1_01
+Info:                           prediction: 0.900000 ns estimate: 0.900000 ns
+Info:                  0.000 X56Y87/CPE.D1_03_int/CPE.IN7_int
+Info:                  0.000 X56Y87/CPE.IN7_int/CPE.IN7
+Info:                  0.000 X56Y87/CPE.IN7/IM.P07.Y
+Info:                  0.292 X56Y87/IM.P07.Y/IM.P07.D6/INV
+Info:                  0.278 X56Y87/IM.P07.D6/IM.P03.Y
+Info:                  0.249 X56Y87/IM.P03.Y/IM.P03.D4/INV
+Info:                  0.330 X56Y87/IM.P03.D4/IM.P03.D4_n
+Info:                  0.244 X55Y86/IM.P03.Y/IM.P03.D1/INV
+Info:                  0.216 X55Y86/IM.P03.D1/IM.P03.D1_n
+Info:                  0.000 X55Y85/SB_SML.P03.Y2/SB_SML.P03.Y2_int/INV
+Info:                  0.205 X55Y85/SB_SML.P03.Y2_int/SB_SML.P03.D3_2
+Info:                  0.000 X55Y85/SB_SML.P03.D3_2/SB_SML.P03.D3_2_n
+Info:                  0.000 X55Y81/SB_SML.P03.Y2/SB_SML.P03.Y2_int/INV
+Info:                  0.262 X55Y81/SB_SML.P03.Y2_int/SB_SML.P03.D2_2
+Info:                  0.000 X55Y81/SB_SML.P03.D2_2/SB_SML.P03.D2_2_n
+Info:                  0.202 X55Y79/SB_BIG.P03.Y2/SB_BIG.P03.D0/INV
+Info:                  0.000 X55Y79/SB_BIG.P03.D0/SB_BIG.P03.D0_n
+Info:                  0.000 X56Y79/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X56Y79/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.50  53.14 Source $abc$115534$blif$115534$2830.OUT
+Info:    routing  2.80  55.94 Net $abc$115534$new_n9217 (56,87) -> (55,87)
+Info:                          Sink $abc$115534$blif$115534$2831.D1_00
+Info:                           prediction: 0.200000 ns estimate: 0.200000 ns
+Info:                  0.000 X55Y87/CPE.D1_02_int/CPE.IN5_int
+Info:                  0.000 X55Y87/CPE.IN5_int/CPE.IN5
+Info:                  0.000 X55Y87/CPE.IN5/IM.P05.Y
+Info:                  0.278 X55Y87/IM.P05.Y/IM.P05.D7/INV
+Info:                  0.277 X55Y87/IM.P05.D7/IM.P09.Y
+Info:                  0.234 X55Y87/IM.P09.Y/IM.P09.D1/INV
+Info:                  0.202 X55Y87/IM.P09.D1/IM.P09.D1_n
+Info:                  0.000 X55Y85/SB_SML.P09.Y2/SB_SML.P09.Y2_int/INV
+Info:                  0.238 X55Y85/SB_SML.P09.Y2_int/SB_SML.P09.YDIAG_int
+Info:                  0.226 X55Y85/SB_SML.P09.YDIAG_int/SB_SML.P09.X14
+Info:                  0.000 X55Y85/SB_SML.P09.X14/SB_SML.P09.X14_n
+Info:                  0.000 X55Y85/SB_SML.P08.YDIAG/SB_SML.P08.YDIAG_int/INV
+Info:                  0.222 X55Y85/SB_SML.P08.YDIAG_int/SB_SML.P08.X34
+Info:                  0.000 X55Y85/SB_SML.P08.X34/SB_SML.P08.X34_n
+Info:                  0.239 X56Y86/SB_BIG.P08.YDIAG/SB_BIG.P08.X34/INV
+Info:                  0.000 X56Y86/SB_BIG.P08.X34/SB_BIG.P08.X34_n
+Info:                  0.000 X57Y87/SB_SML.P08.YDIAG/SB_SML.P08.YDIAG_int/INV
+Info:                  0.223 X57Y87/SB_SML.P08.YDIAG_int/SB_SML.P08.X14
+Info:                  0.000 X57Y87/SB_SML.P08.X14/SB_SML.P08.X14_n
+Info:                  0.000 X57Y87/SB_SML.P07.YDIAG/SB_SML.P07.YDIAG_int/INV
+Info:                  0.114 X57Y87/SB_SML.P07.YDIAG_int/SB_SML.P07.Y1_int
+Info:                  0.330 X57Y87/SB_SML.P07.Y1_int/SB_SML.P07.D2_1
+Info:                  0.000 X57Y87/SB_SML.P07.D2_1/SB_SML.P07.D2_1_n
+Info:                  0.216 X55Y87/SB_BIG.P07.Y1/SB_BIG.P07.D0/INV
+Info:                  0.000 X55Y87/SB_BIG.P07.D0/SB_BIG.P07.D0_n
+Info:                  0.000 X56Y87/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X56Y87/CPE.OUT1_int/CPE.COMBOUT1_int
+Info:      logic  0.57  56.52 Source $abc$115534$blif$115534$2831.OUT
+Info:    routing  2.08  58.60 Net $abc$115534$new_n9218 (55,87) -> (56,73)
+Info:                          Sink $abc$115534$blif$115534$2832.D0_01
+Info:                           prediction: 1.600000 ns estimate: 1.600000 ns
+Info:                  0.000 X56Y73/CPE.D0_01_int/CPE.TI4_int
+Info:                  0.000 X56Y73/CPE.TI4_int/CPE.IN4_int
+Info:                  0.000 X56Y73/CPE.IN4_int/CPE.IN4
+Info:                  0.000 X56Y73/CPE.IN4/IM.P04.Y
+Info:                  0.238 X56Y73/IM.P04.Y/IM.P04.D0/INV
+Info:                  0.205 X56Y73/IM.P04.D0/IM.P04.D0_n
+Info:                  0.000 X55Y73/SB_SML.P04.Y1/SB_SML.P04.Y1_int/INV
+Info:                  0.245 X55Y73/SB_SML.P04.Y1_int/SB_SML.P04.YDIAG_int
+Info:                  0.224 X55Y73/SB_SML.P04.YDIAG_int/SB_SML.P04.X23
+Info:                  0.000 X55Y73/SB_SML.P04.X23/SB_SML.P04.X23_n
+Info:                  0.000 X55Y73/SB_SML.P05.YDIAG/SB_SML.P05.YDIAG_int/INV
+Info:                  0.112 X55Y73/SB_SML.P05.YDIAG_int/SB_SML.P05.Y4_int
+Info:                  0.248 X55Y73/SB_SML.P05.Y4_int/SB_SML.P05.D2_4
+Info:                  0.000 X55Y73/SB_SML.P05.D2_4/SB_SML.P05.D2_4_n
+Info:                  0.398 X55Y75/SB_BIG.P05.Y4/SB_BIG.P05.D5_4/INV
+Info:                  0.000 X55Y75/SB_BIG.P05.D5_4/SB_BIG.P05.D5_4_n
+Info:                  0.200 X55Y87/SB_DRIVE.P05.D4.OUT/SB_DRIVE.P05.D4.IN/INV
+Info:                  0.000 X55Y87/SB_DRIVE.P05.D4.IN/SB_BIG.P05.Y4
+Info:                  0.212 X55Y87/SB_BIG.P05.Y4/SB_BIG.P05.D0/INV
+Info:                  0.000 X55Y87/SB_BIG.P05.D0/SB_BIG.P05.D0_n
+Info:                  0.000 X55Y87/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X55Y87/CPE.OUT1_int/CPE.COMBOUT1_int
+Info:      logic  0.56  59.16 Source $abc$115534$blif$115534$2832.OUT
+Info:    routing  1.52  60.68 Net $abc$115534$new_n9219 (56,73) -> (56,68)
+Info:                          Sink $abc$115534$blif$115534$2835.D0_01
+Info:                           prediction: 0.600000 ns estimate: 0.600000 ns
+Info:                  0.000 X56Y68/CPE.D0_01_int/CPE.IN3_int
+Info:                  0.000 X56Y68/CPE.IN3_int/CPE.IN3
+Info:                  0.000 X56Y68/CPE.IN3/IM.P03.Y
+Info:                  0.246 X56Y68/IM.P03.Y/IM.P03.D3/INV
+Info:                  0.210 X56Y68/IM.P03.D3/IM.P03.D3_n
+Info:                  0.242 X56Y70/SB_BIG.P03.Y4/SB_BIG.P03.D3_4/INV
+Info:                  0.000 X56Y70/SB_BIG.P03.D3_4/SB_BIG.P03.D3_4_n
+Info:                  0.248 X56Y74/SB_BIG.P03.Y4/SB_BIG.P03.YDIAG/INV
+Info:                  0.248 X56Y74/SB_BIG.P03.YDIAG/SB_BIG.P03.X12/INV
+Info:                  0.000 X56Y74/SB_BIG.P03.X12/SB_BIG.P03.X12_n
+Info:                  0.000 X55Y73/SB_SML.P03.YDIAG/SB_SML.P03.YDIAG_int/INV
+Info:                  0.112 X55Y73/SB_SML.P03.YDIAG_int/SB_SML.P03.Y2_int
+Info:                  0.218 X55Y73/SB_SML.P03.Y2_int/SB_SML.P03.D0
+Info:                  0.000 X55Y73/SB_SML.P03.D0/SB_SML.P03.D0_n
+Info:                  0.000 X56Y73/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X56Y73/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.56  61.24 Source $abc$115534$blif$115534$2835.OUT
+Info:    routing  1.70  62.94 Net $abc$115534$new_n9222 (56,68) -> (56,68)
+Info:                          Sink $abc$115534$blif$115534$2836.D0_01
+Info:                           prediction: 0.100000 ns estimate: 0.100000 ns
+Info:                  0.000 X56Y68/CPE.D0_03_int/CPE.IN7_int
+Info:                  0.000 X56Y68/CPE.IN7_int/CPE.IN7
+Info:                  0.000 X56Y68/CPE.IN7/IM.P07.Y
+Info:                  0.239 X56Y68/IM.P07.Y/IM.P07.D3/INV
+Info:                  0.204 X56Y68/IM.P07.D3/IM.P07.D3_n
+Info:                  0.216 X56Y70/SB_BIG.P07.Y4/SB_BIG.P07.D0/INV
+Info:                  0.000 X56Y70/SB_BIG.P07.D0/SB_BIG.P07.D0_n
+Info:                  0.000 X56Y69/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X56Y69/CPE.OUT2_int/CPE.MUXOUT_int
+Info:                  0.396 X56Y69/CPE.MUXOUT_int/CPE.IN4_int
+Info:                  0.000 X56Y69/CPE.IN4_int/CPE.IN4
+Info:                  0.000 X56Y69/CPE.IN4/IM.P04.Y
+Info:                  0.238 X56Y69/IM.P04.Y/IM.P04.D1/INV
+Info:                  0.218 X56Y69/IM.P04.D1/IM.P04.D1_n
+Info:                  0.000 X56Y68/SB_SML.P04.Y2/SB_SML.P04.Y2_int/INV
+Info:                  0.190 X56Y68/SB_SML.P04.Y2_int/SB_SML.P04.D0
+Info:                  0.000 X56Y68/SB_SML.P04.D0/SB_SML.P04.D0_n
+Info:                  0.000 X56Y68/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X56Y68/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.47  63.42 Source $abc$115534$blif$115534$2836.OUT
+Info:    routing  1.61  65.03 Net $abc$115534$new_n9223 (56,68) -> (56,62)
+Info:                          Sink $abc$115534$blif$115534$2846.D1_00
+Info:                           prediction: 0.700000 ns estimate: 0.700000 ns
+Info:                  0.000 X56Y62/CPE.D1_00_int/CPE.IN1_int
+Info:                  0.000 X56Y62/CPE.IN1_int/CPE.IN1
+Info:                  0.000 X56Y62/CPE.IN1/IM.P01.Y
+Info:                  0.239 X56Y62/IM.P01.Y/IM.P01.D3/INV
+Info:                  0.221 X56Y62/IM.P01.D3/IM.P01.D3_n
+Info:                  0.000 X56Y64/SB_SML.P01.Y4/SB_SML.P01.Y4_int/INV
+Info:                  0.241 X56Y64/SB_SML.P01.Y4_int/SB_SML.P01.YDIAG_int
+Info:                  0.224 X56Y64/SB_SML.P01.YDIAG_int/SB_SML.P01.X14
+Info:                  0.000 X56Y64/SB_SML.P01.X14/SB_SML.P01.X14_n
+Info:                  0.000 X56Y64/SB_SML.P12.YDIAG/SB_SML.P12.YDIAG_int/INV
+Info:                  0.113 X56Y64/SB_SML.P12.YDIAG_int/SB_SML.P12.Y4_int
+Info:                  0.225 X56Y64/SB_SML.P12.Y4_int/SB_SML.P12.D3_4
+Info:                  0.000 X56Y64/SB_SML.P12.D3_4/SB_SML.P12.D3_4_n
+Info:                  0.000 X56Y68/SB_SML.P12.Y4/SB_SML.P12.Y4_int/INV
+Info:                  0.142 X56Y68/SB_SML.P12.Y4_int/SB_SML.P12.D0
+Info:                  0.000 X56Y68/SB_SML.P12.D0/SB_SML.P12.D0_n
+Info:                  0.205 X56Y68/OM.P12.Y/OM.P12.D3/INV
+Info:                  0.000 X56Y68/OM.P12.D3/OM.P12.D3_n
+Info:                  0.000 X56Y68/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X56Y68/CPE.OUT1_int/CPE.COMBOUT1_int
+Info:      logic  0.64  65.67 Source $abc$115534$blif$115534$2846.OUT
+Info:    routing  3.61  69.27 Net $abc$115534$auto$simple.cc:210:make_patterns_logic$10209 (56,62) -> (56,58)
+Info:                          Sink $auto$ff.cc:337:slice$16889.EN_INT
+Info:                           prediction: 0.500000 ns estimate: 0.500000 ns
+Info:                  0.000 X56Y58/CPE.EN_int/CPE.EN
+Info:                  0.000 X56Y58/CPE.EN/IM.P10.Y
+Info:                  0.239 X56Y58/IM.P10.Y/IM.P10.D5/INV
+Info:                  0.230 X56Y58/IM.P10.D5/IM.P10.D5_n
+Info:                  0.239 X57Y59/IM.P10.Y/IM.P10.D5/INV
+Info:                  0.230 X57Y59/IM.P10.D5/IM.P10.D5_n
+Info:                  0.239 X58Y60/IM.P10.Y/IM.P10.D5/INV
+Info:                  0.230 X58Y60/IM.P10.D5/IM.P10.D5_n
+Info:                  0.239 X59Y61/IM.P10.Y/IM.P10.D5/INV
+Info:                  0.230 X59Y61/IM.P10.D5/IM.P10.D5_n
+Info:                  0.243 X60Y62/IM.P10.Y/IM.P10.D0/INV
+Info:                  0.206 X60Y62/IM.P10.D0/IM.P10.D0_n
+Info:                  0.000 X58Y62/SB_SML.P10.Y1/SB_SML.P10.Y1_int/INV
+Info:                  0.234 X58Y62/SB_SML.P10.Y1_int/SB_SML.P10.YDIAG_int
+Info:                  0.230 X58Y62/SB_SML.P10.YDIAG_int/SB_SML.P10.X12
+Info:                  0.000 X58Y62/SB_SML.P10.X12/SB_SML.P10.X12_n
+Info:                  0.198 X57Y61/SB_BIG.P10.YDIAG/SB_BIG.P10.Y1/INV
+Info:                  0.285 X57Y61/SB_BIG.P10.Y1/SB_BIG.P10.D2_1/INV
+Info:                  0.000 X57Y61/SB_BIG.P10.D2_1/SB_BIG.P10.D2_1_n
+Info:                  0.000 X55Y61/SB_SML.P10.Y1/SB_SML.P10.Y1_int/INV
+Info:                  0.138 X55Y61/SB_SML.P10.Y1_int/SB_SML.P10.D0
+Info:                  0.000 X55Y61/SB_SML.P10.D0/SB_SML.P10.D0_n
+Info:                  0.195 X55Y61/OM.P10.Y/OM.P10.D3/INV
+Info:                  0.000 X55Y61/OM.P10.D3/OM.P10.D3_n
+Info:                  0.000 X56Y62/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X56Y62/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      setup  0.00  69.27 Source $auto$ff.cc:337:slice$16889.EN_INT
+Info: 12.55 ns logic, 56.72 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge u_ibex_demo_system.clk_sys_i':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source $iopadmap$top_gatemate.uart_rx.Y
+Info:    routing  0.00  0.00 Net $iopadmap$top_gatemate.uart_rx$conn$Y (0,51) -> (0,51)
+Info:                          Sink $iopadmap$top_gatemate.uart_rx$iosel.GPIO_IN
+Info:                           prediction: 0.100000 ns estimate: 0.100000 ns
+Info:                  0.000 X0Y51/IOSEL.GPIO_IN/GPIO.Y
+Info:      logic  0.38  0.38 Source $iopadmap$top_gatemate.uart_rx$iosel.IN1
+Info:    routing  1.50  1.88 Net u_ibex_demo_system.u_uart.uart_rx_i (0,51) -> (7,54)
+Info:                          Sink $auto$ff.cc:337:slice$29205$lt.D0_10
+Info:                           prediction: 1.100000 ns estimate: 1.100000 ns
+Info:                  0.000 X7Y54/CPE.D0_11_int/CPE.D0_03_int
+Info:                  0.000 X7Y54/CPE.D0_03_int/CPE.TI8_int
+Info:                  0.011 X7Y54/CPE.TI8_int/CPE.PINX
+Info:                  0.000 X7Y54/CPE.PINX/CPE.PINX_n
+Info:                  0.120 X6Y54/CPE.POUTX/CPE.PINX
+Info:                  0.000 X6Y54/CPE.PINX/CPE.PINX_n
+Info:                  0.120 X5Y54/CPE.POUTX/CPE.PINX
+Info:                  0.000 X5Y54/CPE.PINX/CPE.PINX_n
+Info:                  0.120 X4Y54/CPE.POUTX/CPE.PINX
+Info:                  0.000 X4Y54/CPE.PINX/CPE.PINX_n
+Info:                  0.120 X3Y54/CPE.POUTX/CPE.PINX
+Info:                  0.000 X3Y54/CPE.PINX/CPE.PINX_n
+Info:                  0.200 X0Y54/LES.CPE_PINX/LES.SB_Y3_SEL2_int
+Info:                  0.000 X0Y54/LES.SB_Y3_SEL2_int/LES.SB_Y3.P1
+Info:                  0.000 X0Y54/LES.SB_Y3.P1/LES.SB_Y3.P1_n
+Info:                  0.000 X2Y54/SB_SML.P01.Y3/SB_SML.P01.Y3_int/INV
+Info:                  0.241 X2Y54/SB_SML.P01.Y3_int/SB_SML.P01.YDIAG_int
+Info:                  0.116 X2Y54/SB_SML.P01.YDIAG_int/SB_SML.P01.Y2_int
+Info:                  0.265 X2Y54/SB_SML.P01.Y2_int/SB_SML.P01.D2_2
+Info:                  0.000 X2Y54/SB_SML.P01.D2_2/SB_SML.P01.D2_2_n
+Info:                  0.192 X2Y52/SB_BIG.P01.Y2/SB_BIG.P01.D0/INV
+Info:                  0.000 X2Y52/SB_BIG.P01.D0/SB_BIG.P01.D0_IO
+Info:                  0.000 X2Y52/SB_BIG.P01.D0_IO/SB_BIG.P01.D0_IO_n
+Info:                  0.000 X0Y52/IOES.SB_IN_01/IOES.IO_IN1
+Info:                  0.000 X0Y52/IOES.IO_IN1/IOES.IO_IN1_n
+Info:                          Defined in:
+Info:                               rtl/uart.sv:25.16
+Info:      logic  0.55  2.43 Source $auto$ff.cc:337:slice$29205$lt.OUT
+Info:    routing  0.00  2.43 Net $auto$ff.cc:337:slice$29205$di (7,54) -> (7,54)
+Info:                          Sink $auto$ff.cc:337:slice$29205.DIN
+Info:                           prediction: 0.100000 ns estimate: 0.100000 ns
+Info:                  0.000 X7Y54/CPE.DIN1_int/CPE.COMBOUT1_int
+Info:      setup  0.10  2.53 Source $auto$ff.cc:337:slice$29205.DIN
+Info: 1.03 ns logic, 1.50 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.clk_wr_i':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source $iopadmap$top_gatemate.td_i.Y
+Info:    routing  0.00  0.00 Net $iopadmap$top_gatemate.td_i$conn$Y (0,45) -> (0,45)
+Info:                          Sink $iopadmap$top_gatemate.td_i$iosel.GPIO_IN
+Info:                           prediction: 0.100000 ns estimate: 0.100000 ns
+Info:                  0.000 X0Y45/IOSEL.GPIO_IN/GPIO.Y
+Info:      logic  0.38  0.38 Source $iopadmap$top_gatemate.td_i$iosel.IN1
+Info:    routing  7.55  7.93 Net u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_jtag_tap.td_i (0,45) -> (52,20)
+Info:                          Sink $abc$115534$blif$115534$3519.D1_10
+Info:                           prediction: 7.800000 ns estimate: 7.800000 ns
+Info:                  0.000 X52Y20/CPE.D1_10_int/CPE.D0_00_int
+Info:                  0.000 X52Y20/CPE.D0_00_int/CPE.TI2_int
+Info:                  0.000 X52Y20/CPE.TI2_int/CPE.IN2_int
+Info:                  0.000 X52Y20/CPE.IN2_int/CPE.IN2
+Info:                  0.000 X52Y20/CPE.IN2/IM.P02.Y
+Info:                  0.233 X52Y20/IM.P02.Y/IM.P02.D0/INV
+Info:                  0.199 X52Y20/IM.P02.D0/IM.P02.D0_n
+Info:                  0.432 X50Y20/SB_BIG.P02.Y1/SB_BIG.P02.D6_1/INV
+Info:                  0.000 X50Y20/SB_BIG.P02.D6_1/SB_BIG.P02.D6_1_n
+Info:                  0.200 X34Y20/SB_DRIVE.P02.D1.OUT_NOINV/SB_DRIVE.P02.D1.IN
+Info:                  0.000 X34Y20/SB_DRIVE.P02.D1.IN/SB_BIG.P02.Y1
+Info:                  0.314 X34Y20/SB_BIG.P02.Y1/SB_BIG.P02.D3_1/INV
+Info:                  0.000 X34Y20/SB_BIG.P02.D3_1/SB_BIG.P02.D3_1_n
+Info:                  0.314 X30Y20/SB_BIG.P02.Y1/SB_BIG.P02.D3_1/INV
+Info:                  0.000 X30Y20/SB_BIG.P02.D3_1/SB_BIG.P02.D3_1_n
+Info:                  0.314 X26Y20/SB_BIG.P02.Y1/SB_BIG.P02.D3_1/INV
+Info:                  0.000 X26Y20/SB_BIG.P02.D3_1/SB_BIG.P02.D3_1_n
+Info:                  0.314 X22Y20/SB_BIG.P02.Y1/SB_BIG.P02.D3_1/INV
+Info:                  0.000 X22Y20/SB_BIG.P02.D3_1/SB_BIG.P02.D3_1_n
+Info:                  0.393 X18Y20/SB_BIG.P02.Y1/SB_BIG.P02.D4_1/INV
+Info:                  0.000 X18Y20/SB_BIG.P02.D4_1/SB_BIG.P02.D4_1_n
+Info:                  0.200 X10Y20/SB_DRIVE.P02.D1.OUT/SB_DRIVE.P02.D1.IN/INV
+Info:                  0.000 X10Y20/SB_DRIVE.P02.D1.IN/SB_BIG.P02.Y1
+Info:                  0.393 X10Y20/SB_BIG.P02.Y1/SB_BIG.P02.D4_1/INV
+Info:                  0.000 X10Y20/SB_BIG.P02.D4_1/SB_BIG.P02.D4_1_n
+Info:                  0.200 X2Y20/SB_DRIVE.P02.D1.OUT/SB_DRIVE.P02.D1.IN/INV
+Info:                  0.000 X2Y20/SB_DRIVE.P02.D1.IN/SB_BIG.P02.Y1
+Info:                  0.256 X2Y20/SB_BIG.P02.Y1/SB_BIG.P02.YDIAG/INV
+Info:                  0.237 X2Y20/SB_BIG.P02.YDIAG/SB_BIG.P02.X12/INV
+Info:                  0.000 X2Y20/SB_BIG.P02.X12/SB_BIG.P02.X12_n
+Info:                  0.000 X1Y19/SB_SML.P02.YDIAG/SB_SML.P02.YDIAG_int/INV
+Info:                  0.118 X1Y19/SB_SML.P02.YDIAG_int/SB_SML.P02.Y4_int
+Info:                  0.242 X1Y19/SB_SML.P02.Y4_int/SB_SML.P02.D3_4
+Info:                  0.000 X1Y19/SB_SML.P02.D3_4/SB_SML.P02.D3_4_n
+Info:                  0.000 X1Y23/SB_SML.P02.Y4/SB_SML.P02.Y4_int/INV
+Info:                  0.242 X1Y23/SB_SML.P02.Y4_int/SB_SML.P02.D3_4
+Info:                  0.000 X1Y23/SB_SML.P02.D3_4/SB_SML.P02.D3_4_n
+Info:                  0.000 X1Y27/SB_SML.P02.Y4/SB_SML.P02.Y4_int/INV
+Info:                  0.242 X1Y27/SB_SML.P02.Y4_int/SB_SML.P02.D3_4
+Info:                  0.000 X1Y27/SB_SML.P02.D3_4/SB_SML.P02.D3_4_n
+Info:                  0.000 X1Y31/SB_SML.P02.Y4/SB_SML.P02.Y4_int/INV
+Info:                  0.242 X1Y31/SB_SML.P02.Y4_int/SB_SML.P02.D3_4
+Info:                  0.000 X1Y31/SB_SML.P02.D3_4/SB_SML.P02.D3_4_n
+Info:                  0.000 X1Y35/SB_SML.P02.Y4/SB_SML.P02.Y4_int/INV
+Info:                  0.242 X1Y35/SB_SML.P02.Y4_int/SB_SML.P02.D3_4
+Info:                  0.000 X1Y35/SB_SML.P02.D3_4/SB_SML.P02.D3_4_n
+Info:                  0.000 X1Y39/SB_SML.P02.Y4/SB_SML.P02.Y4_int/INV
+Info:                  0.244 X1Y39/SB_SML.P02.Y4_int/SB_SML.P02.D2_4
+Info:                  0.000 X1Y39/SB_SML.P02.D2_4/SB_SML.P02.D2_4_n
+Info:                  0.256 X1Y41/SB_BIG.P02.Y4/SB_BIG.P02.YDIAG/INV
+Info:                  0.235 X1Y41/SB_BIG.P02.YDIAG/SB_BIG.P02.X34/INV
+Info:                  0.000 X1Y41/SB_BIG.P02.X34/SB_BIG.P02.X34_n
+Info:                  0.000 X2Y42/SB_SML.P02.YDIAG/SB_SML.P02.YDIAG_int/INV
+Info:                  0.118 X2Y42/SB_SML.P02.YDIAG_int/SB_SML.P02.Y4_int
+Info:                  0.244 X2Y42/SB_SML.P02.Y4_int/SB_SML.P02.D2_4
+Info:                  0.000 X2Y42/SB_SML.P02.D2_4/SB_SML.P02.D2_4_n
+Info:                  0.256 X2Y44/SB_BIG.P02.Y4/SB_BIG.P02.YDIAG/INV
+Info:                  0.240 X2Y44/SB_BIG.P02.YDIAG/SB_BIG.P02.X23/INV
+Info:                  0.000 X2Y44/SB_BIG.P02.X23/SB_BIG.P02.X23_n
+Info:                  0.214 X2Y44/SB_BIG.P03.YDIAG/SB_BIG.P03.Y4/INV
+Info:                  0.201 X2Y44/SB_BIG.P03.Y4/SB_BIG.P03.D2_4/INV
+Info:                  0.000 X2Y44/SB_BIG.P03.D2_4/SB_BIG.P03.D2_4_n
+Info:                  0.000 X2Y46/SB_SML.P03.Y4/SB_SML.P03.Y4_int/INV
+Info:                  0.220 X2Y46/SB_SML.P03.Y4_int/SB_SML.P03.D0
+Info:                  0.000 X2Y46/SB_SML.P03.D0/SB_SML.P03.D0_IO
+Info:                  0.000 X2Y46/SB_SML.P03.D0_IO/SB_SML.P03.D0_IO_n
+Info:                  0.000 X0Y46/IOES.SB_IN_03/IOES.IO_IN1
+Info:                  0.000 X0Y46/IOES.IO_IN1/IOES.IO_IN1_n
+Info:                          Defined in:
+Info:                               rtl/dmi_jtag_tap.sv:31.23
+Info:      logic  0.56  8.49 Source $abc$115534$blif$115534$3519.OUT
+Info:    routing  2.19  10.69 Net $abc$115534$new_n9906 (52,20) -> (50,26)
+Info:                          Sink $abc$115534$blif$115534$3520.D1_00
+Info:                           prediction: 0.900000 ns estimate: 0.900000 ns
+Info:                  0.000 X50Y26/CPE.D1_00_int/CPE.IN1_int
+Info:                  0.000 X50Y26/CPE.IN1_int/CPE.IN1
+Info:                  0.000 X50Y26/CPE.IN1/IM.P01.Y
+Info:                  0.244 X50Y26/IM.P01.Y/IM.P01.D2/INV
+Info:                  0.220 X50Y26/IM.P01.D2/IM.P01.D2_n
+Info:                  0.249 X52Y26/SB_BIG.P01.Y3/SB_BIG.P01.YDIAG/INV
+Info:                  0.241 X52Y26/SB_BIG.P01.YDIAG/SB_BIG.P01.X14/INV
+Info:                  0.000 X52Y26/SB_BIG.P01.X14/SB_BIG.P01.X14_n
+Info:                  0.245 X52Y26/SB_BIG.P12.YDIAG/SB_BIG.P12.X14/INV
+Info:                  0.000 X52Y26/SB_BIG.P12.X14/SB_BIG.P12.X14_n
+Info:                  0.200 X52Y26/SB_BIG.P11.YDIAG/SB_BIG.P11.Y2/INV
+Info:                  0.204 X52Y26/SB_BIG.P11.Y2/SB_BIG.P11.D2_2/INV
+Info:                  0.000 X52Y26/SB_BIG.P11.D2_2/SB_BIG.P11.D2_2_n
+Info:                  0.000 X52Y24/SB_SML.P11.Y2/SB_SML.P11.Y2_int/INV
+Info:                  0.222 X52Y24/SB_SML.P11.Y2_int/SB_SML.P11.D3_2
+Info:                  0.000 X52Y24/SB_SML.P11.D3_2/SB_SML.P11.D3_2_n
+Info:                  0.000 X52Y20/SB_SML.P11.Y2/SB_SML.P11.Y2_int/INV
+Info:                  0.149 X52Y20/SB_SML.P11.Y2_int/SB_SML.P11.D0
+Info:                  0.000 X52Y20/SB_SML.P11.D0/SB_SML.P11.D0_n
+Info:                  0.218 X52Y20/OM.P11.Y/OM.P11.D3/INV
+Info:                  0.000 X52Y20/OM.P11.D3/OM.P11.D3_n
+Info:                  0.000 X52Y20/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X52Y20/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.64  11.33 Source $abc$115534$blif$115534$3520.OUT
+Info:    routing  3.19  14.51 Net $abc$115534$new_n9907 (50,26) -> (38,26)
+Info:                          Sink $abc$115534$blif$115534$3521.D1_00
+Info:                           prediction: 1.300000 ns estimate: 1.300000 ns
+Info:                  0.000 X38Y26/CPE.D1_00_int/CPE.TI2_int
+Info:                  0.000 X38Y26/CPE.TI2_int/CPE.IN2_int
+Info:                  0.000 X38Y26/CPE.IN2_int/CPE.IN2
+Info:                  0.000 X38Y26/CPE.IN2/IM.P02.Y
+Info:                  0.266 X38Y26/IM.P02.Y/IM.P02.D7/INV
+Info:                  0.278 X38Y26/IM.P02.D7/IM.P10.Y
+Info:                  0.237 X38Y26/IM.P10.Y/IM.P10.D4/INV
+Info:                  0.331 X38Y26/IM.P10.D4/IM.P10.D4_n
+Info:                  0.286 X37Y25/IM.P10.Y/IM.P10.D6/INV
+Info:                  0.267 X37Y25/IM.P10.D6/IM.P12.Y
+Info:                  0.233 X37Y25/IM.P12.Y/IM.P12.D2/INV
+Info:                  0.207 X37Y25/IM.P12.D2/IM.P12.D2_n
+Info:                  0.000 X39Y25/SB_SML.P12.Y3/SB_SML.P12.Y3_int/INV
+Info:                  0.258 X39Y25/SB_SML.P12.Y3_int/SB_SML.P12.D2_3
+Info:                  0.000 X39Y25/SB_SML.P12.D2_3/SB_SML.P12.D2_3_n
+Info:                  0.233 X41Y25/SB_BIG.P12.Y3/SB_BIG.P12.D3_3/INV
+Info:                  0.000 X41Y25/SB_BIG.P12.D3_3/SB_BIG.P12.D3_3_n
+Info:                  0.233 X45Y25/SB_BIG.P12.Y3/SB_BIG.P12.D3_3/INV
+Info:                  0.000 X45Y25/SB_BIG.P12.D3_3/SB_BIG.P12.D3_3_n
+Info:                  0.154 X49Y25/SB_BIG.P12.Y3/SB_BIG.P12.D0/INV
+Info:                  0.000 X49Y25/SB_BIG.P12.D0/SB_BIG.P12.D0_n
+Info:                  0.205 X49Y25/OM.P12.Y/OM.P12.D3/INV
+Info:                  0.000 X49Y25/OM.P12.D3/OM.P12.D3_n
+Info:                  0.000 X50Y26/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X50Y26/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.64  15.15 Source $abc$115534$blif$115534$3521.OUT
+Info:    routing  0.00  15.15 Net u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_jtag_tap.idcode_d[31] (38,26) -> (38,26)
+Info:                          Sink $auto$ff.cc:337:slice$35724.DIN
+Info:                           prediction: 0.100000 ns estimate: 0.100000 ns
+Info:                  0.000 X38Y26/CPE.DIN2_int/CPE.COMBOUT2_int
+Info:                          Defined in:
+Info:                               rtl/dmi_jtag_tap.sv:120.16
+Info:      setup  0.10  15.25 Source $auto$ff.cc:337:slice$35724.DIN
+Info: 2.32 ns logic, 12.94 ns routing
+
+Info: Critical path report for cross-domain path 'posedge u_ibex_demo_system.clk_sys_i' -> 'posedge u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.clk_wr_i':
+Info:       type curr  total name
+Info:   clk-to-q  0.59  0.59 Source $auto$ff.cc:337:slice$18450.DOUT
+Info:    routing  9.02  9.61 Net por_cnt[7] (62,39) -> (42,19)
+Info:                          Sink $auto$ff.cc:337:slice$35579.SR
+Info:                           prediction: 4.100000 ns estimate: 4.100000 ns
+Info:                  0.000 X42Y19/CPE.SR/IM.P11.Y
+Info:                  0.250 X42Y19/IM.P11.Y/IM.P11.D2/INV
+Info:                  0.196 X42Y19/IM.P11.D2/IM.P11.D2_n
+Info:                  0.242 X43Y19/SB_BIG.P11.Y3/SB_BIG.P11.D3_3/INV
+Info:                  0.000 X43Y19/SB_BIG.P11.D3_3/SB_BIG.P11.D3_3_n
+Info:                  0.242 X47Y19/SB_BIG.P11.Y3/SB_BIG.P11.D3_3/INV
+Info:                  0.000 X47Y19/SB_BIG.P11.D3_3/SB_BIG.P11.D3_3_n
+Info:                  0.351 X51Y19/SB_BIG.P11.Y3/SB_BIG.P11.D5_3/INV
+Info:                  0.000 X51Y19/SB_BIG.P11.D5_3/SB_BIG.P11.D5_3_n
+Info:                  0.200 X63Y19/SB_DRIVE.P11.D3.OUT/SB_DRIVE.P11.D3.IN/INV
+Info:                  0.000 X63Y19/SB_DRIVE.P11.D3.IN/SB_BIG.P11.Y3
+Info:                  0.180 X63Y19/SB_BIG.P11.Y3/SB_BIG.P11.D2_3/INV
+Info:                  0.000 X63Y19/SB_BIG.P11.D2_3/SB_BIG.P11.D2_3_n
+Info:                  0.000 X65Y19/SB_SML.P11.Y3/SB_SML.P11.Y3_int/INV
+Info:                  0.206 X65Y19/SB_SML.P11.Y3_int/SB_SML.P11.D3_3
+Info:                  0.000 X65Y19/SB_SML.P11.D3_3/SB_SML.P11.D3_3_n
+Info:                  0.000 X69Y19/SB_SML.P11.Y3/SB_SML.P11.Y3_int/INV
+Info:                  0.239 X69Y19/SB_SML.P11.Y3_int/SB_SML.P11.D2_3
+Info:                  0.000 X69Y19/SB_SML.P11.D2_3/SB_SML.P11.D2_3_n
+Info:                  0.242 X71Y19/SB_BIG.P11.Y3/SB_BIG.P11.YDIAG/INV
+Info:                  0.221 X71Y19/SB_BIG.P11.YDIAG/SB_BIG.P11.Y4/INV
+Info:                  0.235 X71Y19/SB_BIG.P11.Y4/SB_BIG.P11.D3_4/INV
+Info:                  0.000 X71Y19/SB_BIG.P11.D3_4/SB_BIG.P11.D3_4_n
+Info:                  0.235 X71Y23/SB_BIG.P11.Y4/SB_BIG.P11.D3_4/INV
+Info:                  0.000 X71Y23/SB_BIG.P11.D3_4/SB_BIG.P11.D3_4_n
+Info:                  0.235 X71Y27/SB_BIG.P11.Y4/SB_BIG.P11.D3_4/INV
+Info:                  0.000 X71Y27/SB_BIG.P11.D3_4/SB_BIG.P11.D3_4_n
+Info:                  0.235 X71Y31/SB_BIG.P11.Y4/SB_BIG.P11.D3_4/INV
+Info:                  0.000 X71Y31/SB_BIG.P11.D3_4/SB_BIG.P11.D3_4_n
+Info:                  0.187 X71Y35/SB_BIG.P11.Y4/SB_BIG.P11.D2_4/INV
+Info:                  0.000 X71Y35/SB_BIG.P11.D2_4/SB_BIG.P11.D2_4_n
+Info:                  0.000 X71Y37/SB_SML.P11.Y4/SB_SML.P11.Y4_int/INV
+Info:                  0.234 X71Y37/SB_SML.P11.Y4_int/SB_SML.P11.YDIAG_int
+Info:                  0.223 X71Y37/SB_SML.P11.YDIAG_int/SB_SML.P11.X12
+Info:                  0.000 X71Y37/SB_SML.P11.X12/SB_SML.P11.X12_n
+Info:                  0.200 X70Y36/SB_BIG.P11.YDIAG/SB_BIG.P11.Y2/INV
+Info:                  0.242 X70Y36/SB_BIG.P11.Y2/SB_BIG.P11.D3_2/INV
+Info:                  0.000 X70Y36/SB_BIG.P11.D3_2/SB_BIG.P11.D3_2_n
+Info:                  0.204 X70Y32/SB_BIG.P11.Y2/SB_BIG.P11.D2_2/INV
+Info:                  0.000 X70Y32/SB_BIG.P11.D2_2/SB_BIG.P11.D2_2_n
+Info:                  0.000 X70Y30/SB_SML.P11.Y2/SB_SML.P11.Y2_int/INV
+Info:                  0.222 X70Y30/SB_SML.P11.Y2_int/SB_SML.P11.D3_2
+Info:                  0.000 X70Y30/SB_SML.P11.D3_2/SB_SML.P11.D3_2_n
+Info:                  0.000 X70Y26/SB_SML.P11.Y2/SB_SML.P11.Y2_int/INV
+Info:                  0.234 X70Y26/SB_SML.P11.Y2_int/SB_SML.P11.YDIAG_int
+Info:                  0.110 X70Y26/SB_SML.P11.YDIAG_int/SB_SML.P11.Y1_int
+Info:                  0.337 X70Y26/SB_SML.P11.Y1_int/SB_SML.P11.D2_1
+Info:                  0.000 X70Y26/SB_SML.P11.D2_1/SB_SML.P11.D2_1_n
+Info:                  0.328 X68Y26/SB_BIG.P11.Y1/SB_BIG.P11.D3_1/INV
+Info:                  0.000 X68Y26/SB_BIG.P11.D3_1/SB_BIG.P11.D3_1_n
+Info:                  0.328 X64Y26/SB_BIG.P11.Y1/SB_BIG.P11.D3_1/INV
+Info:                  0.000 X64Y26/SB_BIG.P11.D3_1/SB_BIG.P11.D3_1_n
+Info:                  0.328 X60Y26/SB_BIG.P11.Y1/SB_BIG.P11.D3_1/INV
+Info:                  0.000 X60Y26/SB_BIG.P11.D3_1/SB_BIG.P11.D3_1_n
+Info:                  0.242 X56Y26/SB_BIG.P11.Y1/SB_BIG.P11.YDIAG/INV
+Info:                  0.221 X56Y26/SB_BIG.P11.YDIAG/SB_BIG.P11.Y4/INV
+Info:                  0.235 X56Y26/SB_BIG.P11.Y4/SB_BIG.P11.D3_4/INV
+Info:                  0.000 X56Y26/SB_BIG.P11.D3_4/SB_BIG.P11.D3_4_n
+Info:                  0.235 X56Y30/SB_BIG.P11.Y4/SB_BIG.P11.D3_4/INV
+Info:                  0.000 X56Y30/SB_BIG.P11.D3_4/SB_BIG.P11.D3_4_n
+Info:                  0.235 X56Y34/SB_BIG.P11.Y4/SB_BIG.P11.D3_4/INV
+Info:                  0.000 X56Y34/SB_BIG.P11.D3_4/SB_BIG.P11.D3_4_n
+Info:                  0.242 X56Y38/SB_BIG.P11.Y4/SB_BIG.P11.YDIAG/INV
+Info:                  0.238 X56Y38/SB_BIG.P11.YDIAG/SB_BIG.P11.X34/INV
+Info:                  0.000 X56Y38/SB_BIG.P11.X34/SB_BIG.P11.X34_n
+Info:                  0.000 X57Y39/SB_SML.P11.YDIAG/SB_SML.P11.YDIAG_int/INV
+Info:                  0.113 X57Y39/SB_SML.P11.YDIAG_int/SB_SML.P11.Y3_int
+Info:                  0.206 X57Y39/SB_SML.P11.Y3_int/SB_SML.P11.D3_3
+Info:                  0.000 X57Y39/SB_SML.P11.D3_3/SB_SML.P11.D3_3_n
+Info:                  0.000 X61Y39/SB_SML.P11.Y3/SB_SML.P11.Y3_int/INV
+Info:                  0.149 X61Y39/SB_SML.P11.Y3_int/SB_SML.P11.D0
+Info:                  0.000 X61Y39/SB_SML.P11.D0/SB_SML.P11.D0_n
+Info:                  0.215 X61Y39/OM.P11.Y/OM.P11.D2/INV
+Info:                  0.000 X61Y39/OM.P11.D2/OM.P11.D2_n
+Info:                  0.000 X62Y39/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X62Y39/CPE.OUT1_int/CPE.DOUT1_int
+Info:                          Defined in:
+Info:                               rtl/top_gatemate.sv:22.8
+Info:      setup  0.10  9.71 Source $auto$ff.cc:337:slice$35579.SR
+Info: 0.69 ns logic, 9.02 ns routing
+
+Info: Critical path report for cross-domain path 'posedge u_ibex_demo_system.clk_sys_i' -> 'negedge u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.clk_wr_i':
+Info:       type curr  total name
+Info:   clk-to-q  0.59  0.59 Source $auto$ff.cc:337:slice$18450.DOUT
+Info:    routing  1.84  2.43 Net por_cnt[7] (62,39) -> (56,32)
+Info:                          Sink $auto$ff.cc:337:slice$35692.SR
+Info:                           prediction: 1.400000 ns estimate: 1.400000 ns
+Info:                  0.000 X56Y32/CPE.SR/IM.P11.Y
+Info:                  0.245 X56Y32/IM.P11.Y/IM.P11.D3/INV
+Info:                  0.196 X56Y32/IM.P11.D3/IM.P11.D3_n
+Info:                  0.235 X56Y34/SB_BIG.P11.Y4/SB_BIG.P11.D3_4/INV
+Info:                  0.000 X56Y34/SB_BIG.P11.D3_4/SB_BIG.P11.D3_4_n
+Info:                  0.242 X56Y38/SB_BIG.P11.Y4/SB_BIG.P11.YDIAG/INV
+Info:                  0.238 X56Y38/SB_BIG.P11.YDIAG/SB_BIG.P11.X34/INV
+Info:                  0.000 X56Y38/SB_BIG.P11.X34/SB_BIG.P11.X34_n
+Info:                  0.000 X57Y39/SB_SML.P11.YDIAG/SB_SML.P11.YDIAG_int/INV
+Info:                  0.113 X57Y39/SB_SML.P11.YDIAG_int/SB_SML.P11.Y3_int
+Info:                  0.206 X57Y39/SB_SML.P11.Y3_int/SB_SML.P11.D3_3
+Info:                  0.000 X57Y39/SB_SML.P11.D3_3/SB_SML.P11.D3_3_n
+Info:                  0.000 X61Y39/SB_SML.P11.Y3/SB_SML.P11.Y3_int/INV
+Info:                  0.149 X61Y39/SB_SML.P11.Y3_int/SB_SML.P11.D0
+Info:                  0.000 X61Y39/SB_SML.P11.D0/SB_SML.P11.D0_n
+Info:                  0.215 X61Y39/OM.P11.Y/OM.P11.D2/INV
+Info:                  0.000 X61Y39/OM.P11.D2/OM.P11.D2_n
+Info:                  0.000 X62Y39/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X62Y39/CPE.OUT1_int/CPE.DOUT1_int
+Info:                          Defined in:
+Info:                               rtl/top_gatemate.sv:22.8
+Info:      setup  0.10  2.53 Source $auto$ff.cc:337:slice$35692.SR
+Info: 0.69 ns logic, 1.84 ns routing
+
+Info: Critical path report for cross-domain path 'posedge u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.clk_wr_i' -> 'posedge u_ibex_demo_system.clk_sys_i':
+Info:       type curr  total name
+Info:   clk-to-q  0.59  0.59 Source $auto$ff.cc:337:slice$14503.DOUT
+Info:    routing  2.26  2.85 Net u_ibex_demo_system.gen_dm_top.u_dm_top.dap.dmi_req_o[39] (54,44) -> (54,44)
+Info:                          Sink $abc$115534$blif$115534$2720.D0_00
+Info:                           prediction: 0.100000 ns estimate: 0.100000 ns
+Info:                  0.000 X54Y44/CPE.D0_00_int/CPE.IN1_int
+Info:                  0.000 X54Y44/CPE.IN1_int/CPE.IN1
+Info:                  0.000 X54Y44/CPE.IN1/IM.P01.Y
+Info:                  0.244 X54Y44/IM.P01.Y/IM.P01.D2/INV
+Info:                  0.220 X54Y44/IM.P01.D2/IM.P01.D2_n
+Info:                  0.000 X56Y44/SB_SML.P01.Y3/SB_SML.P01.Y3_int/INV
+Info:                  0.241 X56Y44/SB_SML.P01.Y3_int/SB_SML.P01.YDIAG_int
+Info:                  0.228 X56Y44/SB_SML.P01.YDIAG_int/SB_SML.P01.X12
+Info:                  0.000 X56Y44/SB_SML.P01.X12/SB_SML.P01.X12_n
+Info:                  0.241 X55Y43/SB_BIG.P01.YDIAG/SB_BIG.P01.X14/INV
+Info:                  0.000 X55Y43/SB_BIG.P01.X14/SB_BIG.P01.X14_n
+Info:                  0.245 X55Y43/SB_BIG.P12.YDIAG/SB_BIG.P12.X14/INV
+Info:                  0.000 X55Y43/SB_BIG.P12.X14/SB_BIG.P12.X14_n
+Info:                  0.201 X55Y43/SB_BIG.P11.YDIAG/SB_BIG.P11.Y1/INV
+Info:                  0.272 X55Y43/SB_BIG.P11.Y1/SB_BIG.P11.D2_1/INV
+Info:                  0.000 X55Y43/SB_BIG.P11.D2_1/SB_BIG.P11.D2_1_n
+Info:                  0.000 X53Y43/SB_SML.P11.Y1/SB_SML.P11.Y1_int/INV
+Info:                  0.149 X53Y43/SB_SML.P11.Y1_int/SB_SML.P11.D0
+Info:                  0.000 X53Y43/SB_SML.P11.D0/SB_SML.P11.D0_n
+Info:                  0.218 X53Y43/OM.P11.Y/OM.P11.D3/INV
+Info:                  0.000 X53Y43/OM.P11.D3/OM.P11.D3_n
+Info:                  0.000 X54Y44/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X54Y44/CPE.OUT1_int/CPE.DOUT1_int
+Info:                          Defined in:
+Info:                               rtl/dmi_jtag.sv:30.24
+Info:      logic  0.61  3.46 Source $abc$115534$blif$115534$2720.OUT
+Info:    routing  1.15  4.61 Net $abc$115534$new_n9107 (54,44) -> (52,44)
+Info:                          Sink $abc$115534$blif$115534$2721.D1_01
+Info:                           prediction: 0.300000 ns estimate: 0.300000 ns
+Info:                  0.000 X52Y44/CPE.D1_03_int/CPE.TI8_int
+Info:                  0.000 X52Y44/CPE.TI8_int/CPE.IN8_int
+Info:                  0.000 X52Y44/CPE.IN8_int/CPE.IN8
+Info:                  0.000 X52Y44/CPE.IN8/IM.P08.Y
+Info:                  0.237 X52Y44/IM.P08.Y/IM.P08.D5/INV
+Info:                  0.250 X52Y44/IM.P08.D5/IM.P08.D5_n
+Info:                  0.236 X53Y45/IM.P08.Y/IM.P08.D1/INV
+Info:                  0.211 X53Y45/IM.P08.D1/IM.P08.D1_n
+Info:                  0.000 X53Y43/SB_SML.P08.Y2/SB_SML.P08.Y2_int/INV
+Info:                  0.216 X53Y43/SB_SML.P08.Y2_int/SB_SML.P08.D0
+Info:                  0.000 X53Y43/SB_SML.P08.D0/SB_SML.P08.D0_n
+Info:                  0.000 X54Y44/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X54Y44/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.50  5.11 Source $abc$115534$blif$115534$2721.OUT
+Info:    routing  1.15  6.27 Net $abc$115534$new_n9108 (52,44) -> (50,44)
+Info:                          Sink $abc$115534$blif$115534$2723.D0_01
+Info:                           prediction: 0.300000 ns estimate: 0.300000 ns
+Info:                  0.000 X50Y44/CPE.D0_01_int/CPE.TI4_int
+Info:                  0.000 X50Y44/CPE.TI4_int/CPE.IN4_int
+Info:                  0.000 X50Y44/CPE.IN4_int/CPE.IN4
+Info:                  0.000 X50Y44/CPE.IN4/IM.P04.Y
+Info:                  0.236 X50Y44/IM.P04.Y/IM.P04.D5/INV
+Info:                  0.244 X50Y44/IM.P04.D5/IM.P04.D5_n
+Info:                  0.238 X51Y45/IM.P04.Y/IM.P04.D1/INV
+Info:                  0.218 X51Y45/IM.P04.D1/IM.P04.D1_n
+Info:                  0.218 X51Y43/SB_BIG.P04.Y2/SB_BIG.P04.D0/INV
+Info:                  0.000 X51Y43/SB_BIG.P04.D0/SB_BIG.P04.D0_n
+Info:                  0.000 X52Y44/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X52Y44/CPE.OUT1_int/CPE.COMBOUT1_int
+Info:      logic  0.56  6.83 Source $abc$115534$blif$115534$2723.OUT
+Info:    routing  3.52  10.35 Net $abc$115534$new_n9110 (50,44) -> (55,46)
+Info:                          Sink $abc$115534$blif$115534$3800.D1_10
+Info:                           prediction: 0.800000 ns estimate: 0.800000 ns
+Info:                  0.000 X55Y46/CPE.D1_10_int/CPE.D0_01_int
+Info:                  0.000 X55Y46/CPE.D0_01_int/CPE.IN3_int
+Info:                  0.000 X55Y46/CPE.IN3_int/CPE.IN3
+Info:                  0.000 X55Y46/CPE.IN3/IM.P03.Y
+Info:                  0.294 X55Y46/IM.P03.Y/IM.P03.D6/INV
+Info:                  0.274 X55Y46/IM.P03.D6/IM.P07.Y
+Info:                  0.239 X55Y46/IM.P07.Y/IM.P07.D1/INV
+Info:                  0.213 X55Y46/IM.P07.D1/IM.P07.D1_n
+Info:                  0.000 X55Y45/SB_SML.P07.Y2/SB_SML.P07.Y2_int/INV
+Info:                  0.240 X55Y45/SB_SML.P07.Y2_int/SB_SML.P07.YDIAG_int
+Info:                  0.220 X55Y45/SB_SML.P07.YDIAG_int/SB_SML.P07.X34
+Info:                  0.000 X55Y45/SB_SML.P07.X34/SB_SML.P07.X34_n
+Info:                  0.206 X56Y46/SB_BIG.P07.YDIAG/SB_BIG.P07.Y1/INV
+Info:                  0.400 X56Y46/SB_BIG.P07.Y1/SB_BIG.P07.D4_1/INV
+Info:                  0.000 X56Y46/SB_BIG.P07.D4_1/SB_BIG.P07.D4_1_n
+Info:                  0.200 X48Y46/SB_DRIVE.P07.D1.OUT/SB_DRIVE.P07.D1.IN/INV
+Info:                  0.000 X48Y46/SB_DRIVE.P07.D1.IN/SB_BIG.P07.Y1
+Info:                  0.240 X48Y46/SB_BIG.P07.Y1/SB_BIG.P07.YDIAG/INV
+Info:                  0.234 X48Y46/SB_BIG.P07.YDIAG/SB_BIG.P07.X34/INV
+Info:                  0.000 X48Y46/SB_BIG.P07.X34/SB_BIG.P07.X34_n
+Info:                  0.000 X49Y47/SB_SML.P07.YDIAG/SB_SML.P07.YDIAG_int/INV
+Info:                  0.220 X49Y47/SB_SML.P07.YDIAG_int/SB_SML.P07.X23
+Info:                  0.000 X49Y47/SB_SML.P07.X23/SB_SML.P07.X23_n
+Info:                  0.000 X49Y47/SB_SML.P08.YDIAG/SB_SML.P08.YDIAG_int/INV
+Info:                  0.115 X49Y47/SB_SML.P08.YDIAG_int/SB_SML.P08.Y2_int
+Info:                  0.212 X49Y47/SB_SML.P08.Y2_int/SB_SML.P08.D3_2
+Info:                  0.000 X49Y47/SB_SML.P08.D3_2/SB_SML.P08.D3_2_n
+Info:                  0.000 X49Y43/SB_SML.P08.Y2/SB_SML.P08.Y2_int/INV
+Info:                  0.216 X49Y43/SB_SML.P08.Y2_int/SB_SML.P08.D0
+Info:                  0.000 X49Y43/SB_SML.P08.D0/SB_SML.P08.D0_n
+Info:                  0.000 X50Y44/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X50Y44/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.56  10.91 Source $abc$115534$blif$115534$3800.OUT
+Info:    routing  1.35  12.26 Net $abc$115534$new_n10187 (55,46) -> (55,47)
+Info:                          Sink $abc$115534$blif$115534$3801.D0_01
+Info:                           prediction: 0.200000 ns estimate: 0.200000 ns
+Info:                  0.000 X55Y47/CPE.D0_01_int/CPE.IN3_int
+Info:                  0.000 X55Y47/CPE.IN3_int/CPE.IN3
+Info:                  0.000 X55Y47/CPE.IN3/IM.P03.Y
+Info:                  0.280 X55Y47/IM.P03.Y/IM.P03.D7/INV
+Info:                  0.274 X55Y47/IM.P03.D7/IM.P11.Y
+Info:                  0.242 X55Y47/IM.P11.Y/IM.P11.D1/INV
+Info:                  0.213 X55Y47/IM.P11.D1/IM.P11.D1_n
+Info:                  0.000 X55Y45/SB_SML.P11.Y2/SB_SML.P11.Y2_int/INV
+Info:                  0.149 X55Y45/SB_SML.P11.Y2_int/SB_SML.P11.D0
+Info:                  0.000 X55Y45/SB_SML.P11.D0/SB_SML.P11.D0_n
+Info:                  0.190 X55Y45/OM.P11.Y/OM.P11.D1/INV
+Info:                  0.000 X55Y45/OM.P11.D1/OM.P11.D1_n
+Info:                  0.000 X55Y46/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X55Y46/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.56  12.81 Source $abc$115534$blif$115534$3801.OUT
+Info:    routing  0.41  13.23 Net $abc$115534$new_n10188 (55,47) -> (55,48)
+Info:                          Sink $abc$115534$blif$115534$3804.D0_10
+Info:                           prediction: 0.200000 ns estimate: 0.200000 ns
+Info:                  0.000 X55Y48/CPE.D0_10_int/CPE.D0_00_int
+Info:                  0.000 X55Y48/CPE.D0_00_int/CPE.TI2_int
+Info:                  0.011 X55Y48/CPE.TI2_int/CPE.PINY1
+Info:                  0.000 X55Y48/CPE.PINY1/CPE.PINY1_n
+Info:                  0.000 X55Y47/CPE.POUTY1/CPE.PY1_VAL
+Info:                  0.000 X55Y47/CPE.PY1_VAL/CPE.PY1_OUT
+Info:                  0.403 X55Y47/CPE.PY1_OUT/CPE.OUT2_IN_int
+Info:                  0.000 X55Y47/CPE.OUT2_IN_int/CPE.OUT2
+Info:                  0.000 X55Y47/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X55Y47/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.61  13.84 Source $abc$115534$blif$115534$3804.OUT
+Info:    routing  1.35  15.19 Net $abc$115534$new_n10191 (55,48) -> (55,49)
+Info:                          Sink $abc$115534$blif$115534$6490.D0_01
+Info:                           prediction: 0.200000 ns estimate: 0.200000 ns
+Info:                  0.000 X55Y49/CPE.D0_03_int/CPE.IN7_int
+Info:                  0.000 X55Y49/CPE.IN7_int/CPE.IN7
+Info:                  0.000 X55Y49/CPE.IN7/IM.P07.Y
+Info:                  0.278 X55Y49/IM.P07.Y/IM.P07.D7/INV
+Info:                  0.275 X55Y49/IM.P07.D7/IM.P11.Y
+Info:                  0.242 X55Y49/IM.P11.Y/IM.P11.D1/INV
+Info:                  0.213 X55Y49/IM.P11.D1/IM.P11.D1_n
+Info:                  0.154 X55Y47/SB_BIG.P11.Y2/SB_BIG.P11.D0/INV
+Info:                  0.000 X55Y47/SB_BIG.P11.D0/SB_BIG.P11.D0_n
+Info:                  0.190 X55Y47/OM.P11.Y/OM.P11.D1/INV
+Info:                  0.000 X55Y47/OM.P11.D1/OM.P11.D1_n
+Info:                  0.000 X55Y48/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X55Y48/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.47  15.66 Source $abc$115534$blif$115534$6490.OUT
+Info:    routing  2.32  17.98 Net $abc$115534$new_n12877 (55,49) -> (56,49)
+Info:                          Sink $abc$115534$blif$115534$6492.D0_01
+Info:                           prediction: 0.200000 ns estimate: 0.200000 ns
+Info:                  0.000 X56Y49/CPE.D0_01_int/CPE.IN3_int
+Info:                  0.000 X56Y49/CPE.IN3_int/CPE.IN3
+Info:                  0.000 X56Y49/CPE.IN3/IM.P03.Y
+Info:                  0.252 X56Y49/IM.P03.Y/IM.P03.D2/INV
+Info:                  0.222 X56Y49/IM.P03.D2/IM.P03.D2_n
+Info:                  0.204 X57Y49/SB_BIG.P03.Y3/SB_BIG.P03.D2_3/INV
+Info:                  0.000 X57Y49/SB_BIG.P03.D2_3/SB_BIG.P03.D2_3_n
+Info:                  0.000 X59Y49/SB_SML.P03.Y3/SB_SML.P03.Y3_int/INV
+Info:                  0.236 X59Y49/SB_SML.P03.Y3_int/SB_SML.P03.YDIAG_int
+Info:                  0.232 X59Y49/SB_SML.P03.YDIAG_int/SB_SML.P03.X14
+Info:                  0.000 X59Y49/SB_SML.P03.X14/SB_SML.P03.X14_n
+Info:                  0.000 X59Y49/SB_SML.P02.YDIAG/SB_SML.P02.YDIAG_int/INV
+Info:                  0.234 X59Y49/SB_SML.P02.YDIAG_int/SB_SML.P02.X14
+Info:                  0.000 X59Y49/SB_SML.P02.X14/SB_SML.P02.X14_n
+Info:                  0.000 X59Y49/SB_SML.P01.YDIAG/SB_SML.P01.YDIAG_int/INV
+Info:                  0.222 X59Y49/SB_SML.P01.YDIAG_int/SB_SML.P01.X34
+Info:                  0.000 X59Y49/SB_SML.P01.X34/SB_SML.P01.X34_n
+Info:                  0.209 X60Y50/SB_BIG.P01.YDIAG/SB_BIG.P01.Y1/INV
+Info:                  0.314 X60Y50/SB_BIG.P01.Y1/SB_BIG.P01.D3_1/INV
+Info:                  0.000 X60Y50/SB_BIG.P01.D3_1/SB_BIG.P01.D3_1_n
+Info:                  0.191 X56Y50/SB_BIG.P01.Y1/SB_BIG.P01.D0/INV
+Info:                  0.000 X56Y50/SB_BIG.P01.D0/SB_BIG.P01.D0_n
+Info:                  0.000 X55Y49/CPE.OUT1/CPE.OUT1_int
+Info:                  0.000 X55Y49/CPE.OUT1_int/CPE.COMBOUT1_int
+Info:      logic  0.56  18.54 Source $abc$115534$blif$115534$6492.OUT
+Info:    routing  0.92  19.46 Net $abc$115534$new_n12879 (56,49) -> (56,53)
+Info:                          Sink $abc$115534$blif$115534$6493.D0_01
+Info:                           prediction: 0.500000 ns estimate: 0.500000 ns
+Info:                  0.000 X56Y53/CPE.D0_03_int/CPE.IN7_int
+Info:                  0.000 X56Y53/CPE.IN7_int/CPE.IN7
+Info:                  0.000 X56Y53/CPE.IN7/IM.P07.Y
+Info:                  0.239 X56Y53/IM.P07.Y/IM.P07.D1/INV
+Info:                  0.213 X56Y53/IM.P07.D1/IM.P07.D1_n
+Info:                  0.000 X56Y52/SB_SML.P07.Y2/SB_SML.P07.Y2_int/INV
+Info:                  0.251 X56Y52/SB_SML.P07.Y2_int/SB_SML.P07.D2_2
+Info:                  0.000 X56Y52/SB_SML.P07.D2_2/SB_SML.P07.D2_2_n
+Info:                  0.216 X56Y50/SB_BIG.P07.Y2/SB_BIG.P07.D0/INV
+Info:                  0.000 X56Y50/SB_BIG.P07.D0/SB_BIG.P07.D0_n
+Info:                  0.000 X56Y49/CPE.OUT2/CPE.OUT2_int
+Info:                  0.000 X56Y49/CPE.OUT2_int/CPE.COMBOUT2_int
+Info:      logic  0.47  19.93 Source $abc$115534$blif$115534$6493.OUT
+Info:    routing  0.00  19.93 Net $abc$115534$procmux$2105_Y[0] (56,53) -> (56,53)
+Info:                          Sink $auto$ff.cc:337:slice$32775.DIN
+Info:                           prediction: 0.100000 ns estimate: 0.100000 ns
+Info:                  0.000 X56Y53/CPE.DIN1_int/CPE.COMBOUT1_int
+Info:      setup  0.10  20.03 Source $auto$ff.cc:337:slice$32775.DIN
+Info: 5.60 ns logic, 14.44 ns routing
+
+Info: Max frequency for clock 'u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.clk_wr_i': 56.22 MHz (PASS at 0.10 MHz)
+Info: Max frequency for clock                                            'u_ibex_demo_system.clk_sys_i': 14.44 MHz (PASS at 10.00 MHz)
+
+Info: Max delay <async>                                                                         -> posedge u_ibex_demo_system.clk_sys_i                                           : 2.53 ns
+Info: Max delay <async>                                                                         -> posedge u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.clk_wr_i: 15.25 ns
+Info: Max delay posedge u_ibex_demo_system.clk_sys_i                                            -> posedge u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.clk_wr_i: 9.71 ns
+Info: Max delay posedge u_ibex_demo_system.clk_sys_i                                            -> negedge u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.clk_wr_i: 2.53 ns
+Info: Max delay posedge u_ibex_demo_system.gen_dm_top.u_dm_top.dap.i_dmi_cdc.i_cdc_req.clk_wr_i -> posedge u_ibex_demo_system.clk_sys_i                                           : 20.03 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 160 endpoint(s)
+Info:          + represents [1,160) endpoint(s)
+Info: [ 30730, 529116) |************************************************************ 
+Info: [529116, 1027502) | 
+Info: [1027502, 1525888) | 
+Info: [1525888, 2024274) | 
+Info: [2024274, 2522660) | 
+Info: [2522660, 3021046) | 
+Info: [3021046, 3519432) | 
+Info: [3519432, 4017818) | 
+Info: [4017818, 4516204) | 
+Info: [4516204, 5014590) |+
+Info: [5014590, 5512976) | 
+Info: [5512976, 6011362) | 
+Info: [6011362, 6509748) | 
+Info: [6509748, 7008134) | 
+Info: [7008134, 7506520) | 
+Info: [7506520, 8004906) | 
+Info: [8004906, 8503292) | 
+Info: [8503292, 9001678) | 
+Info: [9001678, 9500064) | 
+Info: [9500064, 9998450) |*+
+Info: Update configuration based on routing..
+
+Info: Program finished normally.
